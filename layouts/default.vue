@@ -1,11 +1,12 @@
 <template>
-  <div class="container">
+  <main class="max-w-[1366px] mx-auto">
     <Header />
-    <ColorModePicker />
-    <nuxt />
-  </div>
+    <div>
+      <ColorModePicker />
+      <nuxt />
+    </div>
+  </main>
 </template>
-
 <script>
 import Header from '~/components/general/Header.vue'
 import ColorModePicker from '~/components/general/ColorModePicker.vue'

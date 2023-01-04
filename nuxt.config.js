@@ -106,7 +106,7 @@ export default {
   },
   purgeCSS: {
     mode: 'postcss',
-    whitelist: ['dark-mode', 'light-mode', 'btn', 'icon', 'main'],
+    whitelist: ['dark-mode', 'light-mode', 'button', 'icon', 'main'],
     whitelistPatterns: [/^article/, /image$/]
   },
   colorMode: {
@@ -121,8 +121,8 @@ export default {
   },
   pwa: {
     icon: {
-      source: 'static/icon.png',
-      filename: 'icon.png'
+      source: 'static/main-logo.png',
+      filename: 'main-logo.png'
     },
     manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
     meta: {

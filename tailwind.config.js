@@ -11,8 +11,7 @@ module.exports = {
     darkSelector: '.dark-mode',
     extend: {
       fontFamily: {
-        sans: ['Karla', ...defaultTheme.fontFamily.sans],
-        mono: [...defaultTheme.fontFamily.mono]
+        sans: ['Proxima Nova', ...defaultTheme.fontFamily.sans]
       },
       colors: {
         primary: {
@@ -50,6 +49,13 @@ module.exports = {
       outline: '0 0 0 3px rgba(0, 86, 87,0.5)'
     }
   },
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+  ],
   variants: {
     backgroundColor: ['dark', 'dark-hover', 'dark-group-hover'],
     borderColor: ['dark', 'dark-focus', 'dark-focus-within'],

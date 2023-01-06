@@ -1,20 +1,52 @@
 <template>
-  <main class="max-w-[1366px] mx-auto">
-    <Header />
-    <div>
-      <ColorModePicker />
-      <nuxt />
-    </div>
-  </main>
+	<div>
+		<HeaderSectionTwo :menu="menu" />
+
+		<MobileMenu :menu="menu" />
+
+		<Nuxt />
+
+		<FooterSection />
+	</div>
 </template>
 <script>
-import Header from '~/components/general/Header.vue'
-import ColorModePicker from '~/components/general/ColorModePicker.vue'
-
+import MobileMenu from '~/components/header/MobileMenu'
+import FooterSection from '~/components/FooterSection'
+import HeaderSectionTwo from '~/components/header/HeaderSectionTwo'
+import aosMixin from '~/mixins/aos-mixin'
 export default {
-  components: {
-    Header,
-    ColorModePicker
-  }
+	components: { HeaderSectionTwo, FooterSection, MobileMenu },
+	mixins: [aosMixin],
+	data() {
+		return {
+			menu: [
+				{
+					title: 'Pagrindinis',
+					href: '/',
+				},
+				{
+					title: 'Apie mus',
+					href: '/apie-mus',
+				},
+				{
+					title: 'Projektai',
+					href: '/projektai',
+				},
+				{
+					href: '/kontaktai',
+					title: 'Kontaktai',
+				},
+			],
+		}
+	},
+	fetch() {
+		this.$nextTick(() => {
+			if (process.client) {
+				this.$nuxt.$loading.start()
+
+				this.$nuxt.$loading.finish()
+			}
+		})
+	},
 }
 </script>

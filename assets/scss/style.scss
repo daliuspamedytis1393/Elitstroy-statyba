@@ -1,0 +1,530 @@
+body {
+	font-size: $font-size;
+	font-family: $body-font-family;
+	color: $body-color;
+}
+.d-table {
+	width: 100%;
+	height: 100%;
+}
+.d-table-cell {
+	vertical-align: middle;
+}
+a {
+	transition: $transition;
+	text-decoration: none;
+	color: $body-color;
+	cursor: pointer;
+	&:hover {
+		text-decoration: none;
+		color: $main-color;
+	}
+	&:focus {
+		text-decoration: none;
+	}
+}
+button {
+	outline: 0 !important;
+	box-shadow: none;
+	border: none;
+	padding: 0;
+	&:focus {
+		box-shadow: none;
+	}
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $heading-color;
+	font: {
+		weight: 700;
+		family: $heading-font-family;
+	}
+}
+p {
+	font-size: $font-size;
+	margin-bottom: 15px;
+	line-height: 1.8;
+	@media only screen and (max-width: 767px) {
+		font-size: $font-size-sm;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.form-control {
+	height: 55px;
+	border: 1px solid #d7d7d7;
+	background-color: transparent;
+	color: $main-color;
+	border-radius: $border-radius;
+	font-size: 16px;
+	padding: 10px 20px;
+	width: 100%;
+	&::placeholder {
+		color: #676a6a;
+	}
+	&:focus {
+		color: $black-color;
+		background-color: transparent;
+		box-shadow: unset;
+		outline: 0;
+		border: 1px solid $main-color;
+	}
+}
+.form-control:hover,
+.form-control {
+	&:focus {
+		box-shadow: unset;
+	}
+}
+textarea {
+	&.form-control {
+		height: auto;
+	}
+}
+.ptb-100 {
+	padding: {
+		top: 100px;
+		bottom: 100px;
+	}
+}
+.ptb-70 {
+	padding: {
+		top: 70px;
+		bottom: 70px;
+	}
+}
+.pt-100 {
+	padding-top: 100px;
+}
+.pb-100 {
+	padding-bottom: 100px;
+}
+.pt-70 {
+	padding-top: 70px;
+}
+.pb-70 {
+	padding-bottom: 70px;
+}
+.ptb-50 {
+	padding: {
+		top: 50px;
+		bottom: 50px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.ptb-100 {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.pt-100 {
+		padding-top: 60px;
+	}
+	.pb-100 {
+		padding-bottom: 60px;
+	}
+	.pt-70 {
+		padding-top: 30px;
+	}
+	.pb-70 {
+		padding-bottom: 30px;
+	}
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.ps-15 {
+	padding-left: 15px;
+}
+.pe-15 {
+	padding-right: 15px;
+}
+.ms-15 {
+	margin-left: 15px;
+}
+.me-15 {
+	margin-right: 15px;
+}
+.mt-minus-100 {
+	margin-top: -100px;
+}
+@media only screen and (max-width: 1199px) {
+	.me-15 {
+		margin-right: 0;
+	}
+	.ms-15 {
+		margin-left: 0;
+	}
+}
+
+.bg-color-f55e1a {
+	background-color: #f55e1a;
+}
+.bg-color-150f03 {
+	background-color: #150f03;
+}
+.bg-color-251f1a {
+	background-color: #251f1a;
+}
+.bg-color-f2f3f5 {
+	background-color: #f2f3f5;
+}
+.bg-color-f7f8f9 {
+	background-color: #f7f8f9;
+}
+.bg-color-f9f9f9 {
+	background-color: #f9f9f9;
+}
+
+.delay-0-2s {
+	animation-delay: 0.2s;
+}
+.delay-0-4s {
+	animation-delay: 0.4s;
+}
+.delay-0-6s {
+	animation-delay: 0.6s;
+}
+.delay-0-8s {
+	animation-delay: 0.8s;
+}
+.delay-0-1s {
+	animation-delay: 1s;
+}
+section:not(.footer-section) {
+	overflow: hidden !important;
+}
+
+.back-to-top {
+	background-color: $main-color;
+	color: $white-color;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	cursor: pointer;
+}
+
+.main-btn {
+	display: inline-block;
+	position: relative;
+	background-color: $main-color;
+	color: $white-color;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1;
+	text-align: center;
+	padding: 18px 30px;
+	transition: $transition;
+	@media only screen and (max-width: 991px) {
+		font-size: 14px;
+		padding: 15px 20px;
+	}
+	@media only screen and (min-width: 992px) and (max-width: 1199px) {
+		padding: 15px 20px;
+		font-size: 16px;
+	}
+	&::before,
+	&::after {
+		content: '';
+		width: 0;
+		height: 2px;
+		position: absolute;
+		transition: all 0.2s linear;
+		background: $heading-color;
+		right: 0;
+		top: 0;
+		transition-delay: 0.2s;
+		border-radius: $border-radius;
+	}
+	&::after {
+		right: auto;
+		left: 0;
+		top: auto;
+		bottom: 0;
+		transition-delay: 0.6s;
+	}
+	span {
+		display: block;
+		&::before,
+		&::after {
+			content: '';
+			width: 2px;
+			height: 0;
+			position: absolute;
+			transition: all 0.2s linear;
+			background: $heading-color;
+			transition-delay: 0s;
+			left: 0;
+			top: 0;
+			border-radius: $border-radius;
+		}
+		&::after {
+			transition-delay: 0.4s;
+			left: auto;
+			right: 0;
+			top: auto;
+			bottom: 0;
+		}
+	}
+	&.sub-btn {
+		padding: 10px 15px;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	&:hover {
+		color: $white-color;
+		&::before {
+			width: 100%;
+			transition-delay: 0.4s;
+		}
+		&::after {
+			width: 100%;
+			transition-delay: 0s;
+		}
+		span {
+			&::before {
+				height: 100%;
+				transition-delay: 0.6s;
+			}
+			&::after {
+				height: 100%;
+				transition-delay: 0.2s;
+			}
+		}
+	}
+}
+
+.main-detail-btn {
+	font-size: 16px;
+	color: $heading-color;
+	display: block;
+	position: relative;
+	font-weight: 500;
+	@media only screen and (max-width: 991px) {
+		font-size: $font-size-sm;
+	}
+	i {
+		position: relative;
+		top: 0;
+		margin-left: 5px;
+		font-size: 14px !important;
+		margin-bottom: 0 !important;
+		display: inline-block;
+		color: $heading-color !important;
+		margin-right: 2px;
+		transition: $transition;
+	}
+	&:hover {
+		color: $main-color;
+		i {
+			color: $main-color !important;
+		}
+	}
+}
+
+.hover-style {
+	position: relative;
+	transition: $transition;
+	z-index: 1;
+	&::before,
+	&::after {
+		content: '';
+		width: 0;
+		height: 2px;
+		position: absolute;
+		transition: all 0.2s linear;
+		background: $main-color;
+		right: 0;
+		top: 0;
+		transition-delay: 0.2s;
+		border-radius: $border-radius;
+		z-index: -1;
+	}
+	&::after {
+		right: auto;
+		left: 0;
+		top: auto;
+		bottom: 0;
+		transition-delay: 0.6s;
+	}
+	.inner-border {
+		display: block;
+		&::before,
+		&::after {
+			content: '';
+			width: 2px;
+			height: 0;
+			position: absolute;
+			transition: all 0.2s linear;
+			background: $main-color;
+			transition-delay: 0s;
+			left: 0;
+			top: 0;
+			border-radius: $border-radius;
+			z-index: -1;
+		}
+		&::after {
+			transition-delay: 0.4s;
+			left: auto;
+			right: 0;
+			top: auto;
+			bottom: 0;
+		}
+	}
+	&:hover {
+		&::before {
+			width: 100%;
+			transition-delay: 0.4s;
+		}
+		&::after {
+			width: 100%;
+			transition-delay: 0s;
+		}
+		.inner-border {
+			&::before {
+				height: 100%;
+				transition-delay: 0.6s;
+			}
+			&::after {
+				height: 100%;
+				transition-delay: 0.2s;
+			}
+		}
+	}
+}
+
+.text-black {
+	color: black;
+}
+
+.main-section-title {
+	text-align: center;
+	max-width: 600px;
+	margin: -5px auto 50px;
+	@media only screen and (max-width: 991px) {
+		margin-bottom: 30px;
+	}
+	.up-title {
+		font-size: 18px;
+		color: $main-color;
+		font-weight: 700;
+		display: block;
+		margin-bottom: 10px;
+		@media only screen and (max-width: 991px) {
+			font-size: 15px;
+			margin-bottom: 6px;
+		}
+	}
+	h2 {
+		font-size: 45px;
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@media only screen and (max-width: 991px) {
+			font-size: 30px;
+		}
+	}
+	p {
+		max-width: 600px;
+		margin: auto;
+	}
+	&.left-title {
+		margin-left: 0;
+		text-align: left;
+	}
+	&.white-title {
+		h2 {
+			color: $white-color;
+		}
+		p {
+			color: $white-color;
+		}
+	}
+}
+.p-style {
+	color: $white-color;
+}
+
+.main-section-title-wrap {
+	@media only screen and (max-width: 991px) {
+		margin-bottom: 30px;
+		.main-section-title {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.contact-wrap {
+	background-color: #f9f9f9;
+	@media only screen and (max-width: 991px) {
+		.pe-0 {
+			padding-right: 12px !important;
+		}
+	}
+}
+.contact-form {
+	padding: 50px;
+	h2 {
+		font-size: 45px;
+		margin-bottom: 50px;
+		margin-top: -10px;
+	}
+	@media only screen and (max-width: 991px) {
+		padding: 20px;
+		margin-bottom: 30px;
+		h2 {
+			font-size: 30px !important;
+			margin-bottom: 20px;
+		}
+	}
+}
+.form-contact {
+	.form-group {
+		margin-bottom: 30px;
+		.form-control {
+			border-color: #dddddd;
+			background-color: $white-color;
+		}
+	}
+	.main-btn {
+		border-radius: $border-radius;
+	}
+}
+.contact-map {
+	iframe {
+		width: 100%;
+		height: 762px;
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	.container {
+		max-width: 1320px;
+	}
+}

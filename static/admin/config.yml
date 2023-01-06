@@ -1,5 +1,5 @@
 site_url: https://statyba.netlify.app/
-logo_url: https://statyba.netlify.app/main-logo.png
+logo_url: https://statyba.netlify.app/logo.png
 
 publish_mode: editorial_workflow
 backend:
@@ -35,10 +35,10 @@ collections:
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
           # - { label: Site Email, name: siteemail, widget: string, required: false }
-  - name: 'blog'
-    label: 'Blog'
+  - name: 'projektai'
+    label: 'Projektai'
     # identifier_field: name
-    folder: 'assets/content/blog'
+    folder: 'assets/content/projektai'
     create: true
     format: 'json'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -49,15 +49,15 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'projects'
+  - name: 'projektai'
     # identifier_field: name
-    label: 'Projects'
+    label: 'projektai'
     label_singular: 'Project'
-    folder: 'assets/content/projects'
+    folder: 'assets/content/projektai'
     create: true
     format: 'json'
     slug: '{{project_type}}-{{slug}}'
-    preview_path: 'projects/{{slug}}'
+    preview_path: 'projektai/{{slug}}'
     fields:
       - {
           label: 'Project Type',
@@ -66,7 +66,6 @@ collections:
           default: 'story',
           options: [{ label: 'Story', value: 'story' }, { label: 'Photo', value: 'photo' }],
         }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Content', name: 'body', widget: 'markdown', required: false }

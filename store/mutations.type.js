@@ -1,2 +1,5 @@
-export const SET_BLOG_POSTS = 'setBlogPosts'
-export const SET_PROJECT_POSTS = 'setProjectPosts'
+export const SET_PROJEKTAI_DATA = 'setProjektaiData'
+export const SET_APIE_MUS_DATA = 'setApieMusData'
+export const SET_ATSILIEPIMAI_DATA = 'setAtsiliepimaiData'
+export const SET_PAGRINDINIS_DATA = 'setPagrindinisData'
+

@@ -79,7 +79,7 @@ collections:
         fields:
           - { label: Vardas ir pavardė, name: name, widget: string }
           - { label: Atsiliepimas, name: review, widget: string }
-          - { label: Įvertinimas', name: 'review', widget: number }
+          - { label: Įvertinimas', name: 'starCount', widget: number }
           - { label: Paveiksliukas, name: photo, widget: image }
   - name: 'projektai'
     # identifier_field: name

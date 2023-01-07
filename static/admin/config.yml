@@ -50,6 +50,19 @@ collections:
           - { label: Mygtuko pavadinimas, name: buttonName, widget: string, hint: 'Mygtuko pavadinimas' }
           - { label: Metų patirtis, name: year, widget: string, hint: 'Metų patirtis' }
           - { label: Siūlymai, name: suggestions, widget: list, hint: 'Ką siųlote' }
+  - label: 'kontaktai'
+    name: 'kontaktai'
+    files:
+      - label: 'Kontaktai puslapio informacija'
+        name: 'info'
+        file: 'assets/content/kontaktai/kontaktai.json'
+        format: 'json'
+        editor:
+          preview: false
+        fields:
+          - { label: Puslapio antraštė, name: title, widget: string, hint: 'Kontaktai puslapio pavadinimas' }
+          - { label: Kontaktai pavadinimas, name: contactTitle, widget: string, hint: 'Sekcijos pavadinimas' }
+          - { label: Google žemėlapio nuoroda, name: googleMaps, widget: string, hint: 'Google žemėlapio nuoroda' }
   - name: 'atsiliepimai'
     label: 'atsiliepimai'
     label_singular: 'Project'

@@ -38,7 +38,7 @@ collections:
         file: 'assets/content/apie-mus/apie-mus.json'
         format: 'json'
         editor:
-          preview: false
+          preview: true
         fields:
           - { label: Puslapio antraštė, name: title, widget: string, hint: 'Pagrindinio puslapio pavadinimas' }
           - { label: Puslapio tekstas, name: description, widget: markdown, hint: 'Apie mus tekstas' }
@@ -59,17 +59,17 @@ collections:
         file: 'assets/content/kontaktai/kontaktai.json'
         format: 'json'
         editor:
-          preview: false
+          preview: true
         fields:
           - { label: Puslapio antraštė, name: title, widget: string, hint: 'Kontaktai puslapio pavadinimas' }
           - { label: Kontaktai pavadinimas, name: contactTitle, widget: string, hint: 'Sekcijos pavadinimas' }
           - { label: Google žemėlapio nuoroda, name: googleMaps, widget: string, hint: 'Google žemėlapio nuoroda' }
-  - name: 'atsiliepimai'
-    label: 'atsiliepimai'
-    label_singular: 'Project'
+  - label: 'atsiliepimai'
+    name: 'atsiliepimai'
     folder: 'assets/content/atsiliepimai/atsiliepimai.json'
-    create: true
     format: 'json'
+    editor:
+      preview: true
     fields:
       - { label: PageTitle, name: pageTitle, widget: string }
       - { label: Title, name: 'title', widget: string }

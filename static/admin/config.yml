@@ -49,7 +49,7 @@ collections:
             }
           - { label: Mygtuko pavadinimas, name: buttonName, widget: string, hint: 'Mygtuko pavadinimas' }
           - { label: Metų patirtis, name: year, widget: string, hint: 'Metų patirtis' }
-          - { label: Siūlymai, name: suggestions, widget: list, hint: 'Ką siųlote' }
+          - { label: Siūlymai, name: suggestions, widget: list, hint: 'Ką siųlote', field: { label: 'Siūlymas', name: 'title', widget: 'string' }  }
   - label: 'kontaktai'
     name: 'kontaktai'
     files:

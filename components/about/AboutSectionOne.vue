@@ -58,6 +58,9 @@ export default {
 			return this.$store.state.apieMusData[0]
 		}
 	},
+	mounted() {
+		console.log(websiteData)
+	}
 }
 </script>
 

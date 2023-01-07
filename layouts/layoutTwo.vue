@@ -6,6 +6,8 @@
 
 		<Nuxt />
 
+		<CallButton />
+
 		<FooterSection />
 	</div>
 </template>
@@ -13,12 +15,13 @@
 <script>
 import MobileMenu from '~/components/header/MobileMenu'
 import HeaderSectionTwo from '~/components/header/HeaderSectionTwo'
+import CallButton from '~/components/CallButton.vue'
 import FooterSection from '~/components/FooterSection'
 
 import aosMixin from '~/mixins/aos-mixin'
 export default {
 	name: 'layoutTwo',
-	components: { FooterSection, HeaderSectionTwo, MobileMenu },
+	components: { FooterSection, HeaderSectionTwo, MobileMenu, CallButton },
 	mixins: [aosMixin],
 	data() {
 		return {

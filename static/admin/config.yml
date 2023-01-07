@@ -66,21 +66,24 @@ collections:
           - { label: Google žemėlapio nuoroda, name: googleMaps, widget: string, hint: 'Google žemėlapio nuoroda' }
   - label: 'atsiliepimai'
     name: 'atsiliepimai'
-    folder: 'assets/content/atsiliepimai/atsiliepimai.json'
-    format: 'json'
-    editor:
-      preview: true
-    fields:
-      - { label: PageTitle, name: pageTitle, widget: string }
-      - { label: Title, name: 'title', widget: string }
-      - label: 'Asiliepimas'
-        name: reviews
-        widget: list
-        fields:
-          - { label: Vardas ir pavardė, name: name, widget: string }
-          - { label: Atsiliepimas, name: review, widget: string }
-          - { label: Įvertinimas', name: 'starCount', widget: number }
-          - { label: Paveiksliukas, name: photo, widget: image }
+    files : 
+    - label: 'Atsiliepimai puslapio informacija'
+      name: 'info'
+      file: 'assets/content/atsiliepimai/atsiliepimai.json'
+      format: 'json'
+      editor:
+        preview: true
+      fields:
+        - { label: PageTitle, name: pageTitle, widget: string }
+        - { label: Title, name: 'title', widget: string }
+        - label: 'Asiliepimas'
+          name: reviews
+          widget: list
+          fields:
+            - { label: Vardas ir pavardė, name: name, widget: string }
+            - { label: Atsiliepimas, name: review, widget: string }
+            - { label: Įvertinimas', name: 'starCount', widget: number }
+            - { label: Paveiksliukas, name: photo, widget: image }
   - name: 'projektai'
     # identifier_field: name
     label: 'projektai'

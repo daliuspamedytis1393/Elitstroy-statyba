@@ -30,6 +30,8 @@
 </template>
 
 <script>
+import TestimonialItem from './TestimonialItem.vue'
+
 export default {
   name: 'TestimonialSection',
   components: { TestimonialItem },

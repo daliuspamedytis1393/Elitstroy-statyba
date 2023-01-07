@@ -1,7 +1,6 @@
 export default {
 	// Global page headers: https://go.nuxtjs.dev/config-head
-	ssr: false,
-	target: 'static',
+	mode: 'universal',
 	loading: '~/components/Preloader.vue',
 	head: {
 		title: 'Bonax - Construction & Business Vue Nuxt Js Template',

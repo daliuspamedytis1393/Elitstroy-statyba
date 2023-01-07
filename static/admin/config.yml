@@ -41,15 +41,16 @@ collections:
           preview: false
         fields:
           - { label: Puslapio antraštė, name: title, widget: string, hint: 'Pagrindinio puslapio pavadinimas' }
-          - {
-              label: Puslapio tekstas,
-              name: description,
-              widget: markdown,
-              hint: 'Apie mus tekstas',
-            }
+          - { label: Puslapio tekstas, name: description, widget: markdown, hint: 'Apie mus tekstas' }
           - { label: Mygtuko pavadinimas, name: buttonName, widget: string, hint: 'Mygtuko pavadinimas' }
           - { label: Metų patirtis, name: year, widget: string, hint: 'Metų patirtis' }
-          - { label: Siūlymai, name: suggestions, widget: list, hint: 'Ką siųlote', field: { label: 'Siūlymas', name: 'title', widget: 'string' }  }
+          - {
+              label: Siūlymai,
+              name: suggestions,
+              widget: list,
+              hint: 'Ką siųlote',
+              field: { label: 'Siūlymas', name: 'title', widget: 'string' },
+            }
   - label: 'kontaktai'
     name: 'kontaktai'
     files:
@@ -66,31 +67,20 @@ collections:
   - name: 'atsiliepimai'
     label: 'atsiliepimai'
     label_singular: 'Project'
-    folder: 'assets/content/atsiliepimai'
+    folder: 'assets/content/atsiliepimai/atsiliepimai.json'
     create: true
     format: 'json'
-    slug: '{{project_type}}-{{slug}}'
-    preview_path: 'atsiliepimai/{{slug}}'
     fields:
-      - {
-          label: 'Project Type',
-          name: 'project_type',
-          widget: 'select',
-          default: 'story',
-          options: [{ label: 'Story', value: 'story' }, { label: 'Photo', value: 'photo' }],
-        }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'Content', name: 'body', widget: 'markdown', required: false }
-      - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
-      - {
-          label: 'Gallery',
-          name: 'gallery',
-          widget: 'list',
-          required: false,
-          summary: '{{fields.image}}',
-          field: { label: 'Image', name: 'image', widget: 'image' },
-        }
+      - { label: PageTitle, name: pageTitle, widget: string }
+      - { label: Title, name: 'title', widget: string }
+      - label: 'Asiliepimas'
+        name: reviews
+        widget: list
+        fields:
+          - { label: Vardas ir pavardė, name: name, widget: string }
+          - { label: Atsiliepimas, name: review, widget: string }
+          - { label: Įvertinimas', name: 'review', widget: number }
+          - { label: Paveiksliukas, name: photo, widget: image }
   - name: 'projektai'
     # identifier_field: name
     label: 'projektai'

@@ -2,11 +2,8 @@
 	<section class="testimonial-section ptb-100">
 		<div class="container">
 			<main-title
-				sub-title="Our Testimonial"
-				title="This Best Testimonial "
-				text="Louasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-					voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-					architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+				sub-title="Atsiliepimai"
+				title="Ką kalba apie mus"
 			/>
 			<client-only>
 				<owl-carousel
@@ -58,15 +55,13 @@ export default {
 			testimonialItem: [
 				{
 					image: image1,
-					name: 'Jhon Doe',
-					title: 'Founder',
-					text: 'Louasi architecto beatae vitae dicta su voluptatem quia the voluptas so sequuntur magni dolores.',
+					name: 'Inga Kubiliūtė',
+					text: 'Ačiū už išklotas trinkeles ir sutvarkytą aplinką, vaizdas nuostabus!',
 				},
 				{
 					image: image2,
-					name: 'Jhon Smith',
-					title: 'Founder',
-					text: 'Louasi architecto beatae vitae dicta su voluptatem quia the voluptas so sequuntur magni dolores.',
+					name: 'Mykolas Majauskas',
+					text: 'Dėkoju už šauniai atliktus trinkelių klojimo darbus. Viskas puiku.',
 				},
 			],
 		}

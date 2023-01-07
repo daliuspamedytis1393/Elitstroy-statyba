@@ -53,7 +53,9 @@ export default {
 	.owl-carousel {
 		.owl-item {
 			img {
-				width: auto;
+				width: 80px;
+				height: auto;
+				object-fit: cover;
 				margin: auto;
 				margin-bottom: 20px;
 			}
@@ -67,8 +69,14 @@ export default {
 	text-align: center;
 	img {
 		margin-bottom: 20px;
+		border-radius: 50%;
+		width: 80px;
+		object-fit: cover;
 	}
 	p {
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
 		font-style: italic;
 		font-size: 22px;
 		font-weight: 600;

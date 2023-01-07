@@ -1,28 +1,23 @@
 <template>
-	<div>
-		<banner-one class="bg-1" />
 
-		<service-section />
+  <div>
 
-		<testimonial-section />
+    <banner-one class="bg-1" />
 
-		<project-section />
+    <service-section />
 
-		<blog-section />
-	</div>
+    <testimonial-section />
+
+    <project-section />
+
+    <blog-section />
+
+  </div>
+
 </template>
 
 <script>
-export default {
-	name: 'IndexPage',
-	head() {
-		return {
-			script: [
-				{
-					src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
-				},
-			],
-		}
-	},
-}
+ export default { name: 'IndexPage', head() { return { script: [ { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+}, ], } }, mounted() { return console.log(this.$store.state.pagrindinisData) } }
 </script>
+

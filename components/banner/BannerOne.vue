@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="banner-content">
 				<h1 data-aos="fade-up" data-aos-delay="200">
-					Ieškote statybos paslaugų ?
+					{{websiteData.title}}
 				</h1>
 
 				<ul data-aos="fade-up" data-aos-delay="600">
@@ -17,7 +17,7 @@
 					data-aos-delay="600"
 				>
 					<span>
-						Susisiekite jau dabar!
+						{{websiteData.buttonName}}
 						<i class="icofont-arrow-right"></i>
 					</span>
 				</a>
@@ -29,6 +29,11 @@
 <script>
 export default {
 	name: 'BannerOne',
+	computed: {
+		websiteData() {
+			return this.$store.state.pagrindinisData[0]
+		}
+	},
 }
 </script>
 

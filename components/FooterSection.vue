@@ -36,27 +36,26 @@
 								<li>
 									<i class="icofont-clock-time"></i>
 									<span>
-										Darbo laikas: pirmadieniais -
-										penktadieniais: 8.00 - 18.00
+										{{ websiteData.workTime }}
 									</span>
 								</li>
 
 								<li>
 									<i class="icofont-location-pin"></i>
 									<span>
-										Adresas: Gerovės g. 51-104, LT-11221
-										Vilnius
+										{{ websiteData.address }}
 									</span>
 								</li>
 								<li>
 									<i class="icofont-location-pin"></i>
-									<a href="mailto:uab.elitstroy@gmail.com">
-										uab.elitstroy@gmail.com
+									<a :href="`mailto:${websiteData.email}`">
+										{{ websiteData.email }}
 									</a>
 								</li>
 								<li>
 									<i class="icofont-phone"></i>
-									<a href="tel:+37060888989"> +37060888989</a>
+									<a :href="`tel:${websiteData.phone}`">
+										 {{ websiteData.phone }}</a>
 								</li>
 								<li>
 									<i class="icofont-bag-alt"></i>
@@ -88,6 +87,11 @@
 <script>
 export default {
 	name: 'FooterSection',
+	computed: {
+		websiteData() {
+			return this.$store.state.pagrindinisData[0]
+		}
+	},
 	methods: {
 		moveUp() {
 			window.scrollTo(0, 0)

@@ -13,7 +13,7 @@
 					data-aos-delay="600"
 				>
 					<span>
-						Susisiekite jau dabar!
+						{{websiteData.buttonName}}
 						<i class="icofont-arrow-right"></i>
 					</span>
 				</a>
@@ -25,6 +25,11 @@
 <script>
 export default {
 	name: 'BannerThree',
+	computed: {
+		websiteData() {
+			return this.$store.state.pagrindinisData[0]
+		}
+	},
 }
 </script>
 

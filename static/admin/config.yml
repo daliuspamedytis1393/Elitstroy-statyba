@@ -21,7 +21,13 @@ collections:
         editor:
           preview: false
         fields:
-          - { label: Title, name: title, widget: string, hint: 'This is used for the site title' }
+          - { label: Puslapio antraštė, name: title, widget: string, hint: 'Pagrindinio puslapio pavadinimas' }
+          - { label: Mygtuko pavadinimas, name: buttonName, widget: string, hint: 'Mygtuko pavadinimas' }
+          - { label: Telefono numeris, name: phone, widget: string, hint: 'Telefono numeris' }
+          - { label: Elektroninis paštas, name: email, widget: string, hint: 'Elektroninis paštas' }
+          - { label: Darbo laikas, name: workTime, widget: string, hint: 'Darbo laikas' }
+          - { label: Adresas, name: address, widget: string, hint: 'Įmonės adresas' }
+          - { label: metai, name: year, widget: string, hint: 'Autorių teisių metai (kiekvienais metais pakeiskite)' }
           - {
               label: Site Description,
               name: description,

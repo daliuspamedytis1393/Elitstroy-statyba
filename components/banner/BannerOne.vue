@@ -48,8 +48,8 @@ export default {
 	z-index: 1;
 
 	@media only screen and (max-width: 991px) {
-		padding-top: 200px;
-		padding-bottom: 60px;
+		padding-top: 250px;
+		padding-bottom: 80px;
 	}
 	@media only screen and (min-width: 992px) and (max-width: 1199px) {
 		padding-top: 120px;

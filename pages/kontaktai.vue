@@ -14,12 +14,13 @@
 							<div class="contact-form ptb-100">
 								<h2>Mes pasiruošę išspręsti jums padėti</h2>
 
-								<form class="form-contact">
+								<form class="form-contact" name="contact" method="POST" data-netlify="true">
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
 												<input
-													type="text"
+													type="text" 
+													name="name"
 													class="form-control"
 													placeholder="Vardas"
 												/>
@@ -28,7 +29,8 @@
 										<div class="col-lg-6">
 											<div class="form-group">
 												<input
-													type="email"
+													type="email" 
+													name="email"
 													class="form-control"
 													placeholder="Elektroninis paštas"
 												/>
@@ -38,6 +40,7 @@
 											<div class="form-group">
 												<input
 													type="text"
+													name="number"
 													class="form-control"
 													placeholder="Telefono numeris"
 												/>
@@ -57,6 +60,7 @@
 												<textarea
 													cols="30"
 													rows="10"
+													name="message"
 													class="form-control"
 													placeholder="Jūsų žinutė"
 												></textarea>

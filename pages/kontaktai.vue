@@ -14,7 +14,12 @@
 							<div class="contact-form ptb-100">
 								<h2>Mes pasiruošę išspręsti jums padėti</h2>
 								<input type="hidden" name="contact" value="contact">
-								<form class="form-contact" name="contact" method="POST" data-netlify="true">
+								<form class="form-contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+									<p class="hidden">
+										<label>
+										Don’t fill this out if you’re human: <input name="bot-field" />
+										</label>
+									</p>
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">

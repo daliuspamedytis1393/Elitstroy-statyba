@@ -15,7 +15,7 @@
 
 						<div class="experience">
 							<div class="experience-bg">
-								<span>3 metų patirtis</span>
+								<span>{{ websiteData.year }}</span>
 							</div>
 						</div>
 					</div>
@@ -26,37 +26,20 @@
 						data-aos="fade-left"
 						data-aos-delay="400"
 					>
-						<h2>Apie mus</h2>
+						<h2>{{websiteData.title}}</h2>
 						<p>
-							UAB Elistroy yra patikima statybų įmonė, kuri veikia
-							Lietuvoje jau daugiau nei 3 metus. Mes esame
-							profesionalūs statybininkai, kurie gali atlikti visų
-							rūšių statybos darbus, nuo namų statybos iki
-							komercinių projektų. Taip pat siūlome konsultacijas,
-							projektavimo paslaugas ir techninę pagalbą. Mes
-							siekiame suteikti aukščiausios kokybės paslaugas,
-							kurios atitinka visus klientų reikalavimus. Mes
-							siekiame užtikrinti, kad visi mūsų darbai būtų
-							atliekami laiku ir pagal nustatytą biudžetą.
+							{{websiteData.description}}
 						</p>
-						<ul>
+						<ul v-for="(item, index) in websiteData.suggestions" :key="index">
 							<li>
 								<i class="icofont-hand-drawn-right"></i>
-								Konkurencinė kaina
-							</li>
-							<li>
-								<i class="icofont-hand-drawn-right"></i>
-								Kokybiškos paslaugos
-							</li>
-							<li>
-								<i class="icofont-hand-drawn-right"></i>
-								Naujausios technologijos
+								{{item}}
 							</li>
 						</ul>
 
 						<nuxt-link to="/kontaktai" class="main-btn">
 							<span>
-								Susisiekite
+								{{ websiteData.buttonName }}
 								<i class="icofont-arrow-right"></i>
 							</span>
 						</nuxt-link>
@@ -70,6 +53,11 @@
 <script>
 export default {
 	name: 'AboutSectionOne',
+	computed: {
+		websiteData() {
+			return this.$store.state.apieMusData[0]
+		}
+	},
 }
 </script>
 

@@ -60,12 +60,12 @@
 								<li>
 									<i class="icofont-bag-alt"></i>
 									<span>
-										PVM mokėtojo kodas LT100012932912</span
+										{{ websiteData.companyNumber }}</span
 									>
 								</li>
 								<li>
 									<i class="icofont-address-book"></i>
-									<span> Įmonės kodas: 305437117</span>
+									<span> {{ websiteData.pvm }} </span>
 								</li>
 							</ul>
 						</div>
@@ -77,7 +77,7 @@
 		<div class="copy-right-section">
 			<div class="container">
 				<p>
-					Autorių teisės © 2022 UAB Elitstroy. Visos teisės saugomos.
+					Autorių teisės © {{ websiteData.year }} UAB Elitstroy. Visos teisės saugomos.
 				</p>
 			</div>
 		</div>

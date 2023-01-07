@@ -2,7 +2,7 @@
 	<div>
 		<page-banner
 			class="bg-1"
-			page-name="Apie mus"
+			:page-name="websiteData.title"
 			:links="[
 				{ name: 'Pagrindinis', url: '/' },
 				{ name: 'Apie mus', url: '/apie-mus' },
@@ -24,5 +24,10 @@ export default {
 	name: 'about',
 	components: { PageBanner },
 	layout: 'layoutTwo',
+	computed: {
+		websiteData() {
+			return this.$store.state.apieMusData[0]
+		}
+	},
 }
 </script>

@@ -34,12 +34,12 @@ export default {
   },
   head() {
     return {
-      title: seoData.aboutUsMetaTitle,
+      title: this.seoData.aboutUsMetaTitle,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: seoData.aboutUsMetaDescription,
+          content: this.seoData.aboutUsMetaDescription,
         },
       ],
     }

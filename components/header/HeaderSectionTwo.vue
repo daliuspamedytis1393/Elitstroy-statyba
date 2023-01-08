@@ -8,7 +8,6 @@
             height="54"
             width="54"
             src="/image/logo.png"
-            placeholder
             alt="Kompanijos logotipas"
           />
           <h4 class="header-title">Elitstroy</h4>

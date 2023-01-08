@@ -20,12 +20,12 @@ export default {
   },
   head() {
     return {
-      title: seoData.homepageMetaTitle,
+      title: this.seoData.homepageMetaTitle,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: seoData.homepageMetaDescription,
+          content: this.seoData.homepageMetaDescription,
         },
       ],
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],

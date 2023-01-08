@@ -26,12 +26,12 @@ export default {
   },
   head() {
     return {
-      title: seoData.projectsMetaTitle,
+      title: this.seoData.projectsMetaTitle,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: seoData.projectsMetaDescription,
+          content: this.seoData.projectsMetaDescription,
         },
       ],
     }

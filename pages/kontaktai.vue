@@ -100,12 +100,12 @@ export default {
   },
   head() {
     return {
-      title: seoData.contactsMetaTitle,
+      title: this.seoData.contactsMetaTitle,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: seoData.contactsMetaDescription,
+          content: this.seoData.contactsMetaDescription,
         },
       ],
     }

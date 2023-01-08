@@ -34,6 +34,12 @@ export default {
           content: this.seoData.projectsMetaDescription,
         },
       ],
+	  link: [
+        {
+          rel: 'canonical',
+          href: 'https://elitstroy.lt' + this.$route.path
+        }
+      ],
     }
   },
 }

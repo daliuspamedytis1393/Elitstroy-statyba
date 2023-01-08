@@ -12,11 +12,11 @@
           <h4 class="header-title">Elitstroy</h4>
         </nuxt-link>
 
-        <a id="mobile_menu" class="mobile-menu" @click="OpenMobileMenu">
+        <div id="mobile_menu" class="mobile-menu" @click="OpenMobileMenu">
           <div class="mobile-menu-btn">
             <div class="mobile-menu-bar"></div>
           </div>
-        </a>
+        </div>
 
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav style-two m-auto">
@@ -401,6 +401,8 @@ nav {
 }
 
 .mobile-menu {
+  background-color: none;
+  border: none;
   width: 50px;
   height: 50px;
   display: flex;

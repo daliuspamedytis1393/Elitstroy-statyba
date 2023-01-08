@@ -18,6 +18,9 @@ export default {
       return this.$store.state.seoData[0]
     }
   },
+  mounted(){
+    console.log(process.env.URL)
+  },
   head() {
     return {
       title: this.seoData.homepageMetaTitle,
@@ -27,6 +30,12 @@ export default {
           name: 'description',
           content: this.seoData.homepageMetaDescription,
         },
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://elitstroy.lt' + this.$route.path
+        }
       ],
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
     }

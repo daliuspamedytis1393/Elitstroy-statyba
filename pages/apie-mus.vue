@@ -9,7 +9,7 @@
       ]"
     />
 
-    <about-section-one />
+    <about-section-one class="pt-100" />
 
     <feature-section class="pt-100" />
   </div>
@@ -39,6 +39,12 @@ export default {
           name: 'description',
           content: this.seoData.aboutUsMetaDescription,
         },
+      ],
+	  link: [
+        {
+          rel: 'canonical',
+          href: 'https://elitstroy.lt' + this.$route.path
+        }
       ],
     }
   },

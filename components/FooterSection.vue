@@ -9,13 +9,12 @@
           <div class="col-lg-3 col-sm-6">
             <div class="main-footer-item" data-aos="fade-up" data-aos-delay="100">
               <nuxt-link to="/" class="footer-logo">
-                <nuxt-img
+                <img
                   loading="lazy"
                   height="54"
                   width="54"
                   src="/image/logo.png"
                   alt="Kompanijos logotipas"
-				  placeholder
                 />
                 <h4 class="footer-title">Elitstroy</h4>
               </nuxt-link>

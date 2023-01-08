@@ -1,7 +1,7 @@
 <template>
 	<div class="main-projects-item">
 		<nuxt-link :to="link" class="projects-img">
-			<img :src="image" alt="Image" />
+			<img :src="image" alt="Projektas ir jo informacija" />
 		</nuxt-link>
 
 		<div class="project-content hover-style">

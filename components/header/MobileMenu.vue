@@ -1,7 +1,5 @@
 <template>
   <div>
-    <!--=== Start Menu Slide Bar ===-->
-
     <aside id="menu_slide_bar" class="menu-slide-bar">
       <div class="close-mobile-menu">
         <div class="mobile-logo">
@@ -23,7 +21,6 @@
       </sidebar-menu>
     </aside>
     <div id="body_overlay" class="body-overlay" @click="CloseMobileMenu"></div>
-    <!--=== End Menu Slide Bar ===-->
   </div>
 </template>
 

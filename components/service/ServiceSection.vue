@@ -32,11 +32,11 @@
 			</client-only>
 		</div>
 
-		<img
+		<!-- <img
 			src="~assets/images/services-bg-shape.png"
 			class="services-bg-shape"
 			alt="Image"
-		/>
+		/> -->
 	</section>
 </template>
 
@@ -133,7 +133,6 @@ export default {
 	}
 
 	&.bg-2 {
-		background-image: url(~/assets/images/services-bg.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;

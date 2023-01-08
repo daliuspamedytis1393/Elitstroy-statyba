@@ -27,11 +27,11 @@
 			</div>
 		</div>
 
-		<img
+		<!-- <img
 			src="~assets/images/services-bg-shape.png"
 			class="services-bg-shape"
 			alt="Image"
-		/>
+		/> -->
 	</section>
 </template>
 

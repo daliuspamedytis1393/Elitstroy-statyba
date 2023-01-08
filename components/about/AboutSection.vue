@@ -15,7 +15,7 @@
         </div>
         <div class="col-lg-6">
           <div class="about-content ms-15" data-aos="fade-left" data-aos-delay="400">
-            <h2>{{ websiteData.title }}</h2>
+            <h1>{{ websiteData.title }}</h1>
             <p>
               {{ websiteData.description }}
             </p>
@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: 'AboutSectionOne',
+  name: 'AboutSection',
   computed: {
     websiteData() {
       return this.$store.state.apieMusData[0]

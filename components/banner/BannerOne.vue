@@ -70,7 +70,7 @@ export default {
 	}
 
 	&.bg-1 {
-		background-image: url(~/assets/images/pagrindinis/pagrindinis.jpg);
+		background-image: url(/image/main.jpg);
 
 		&::before {
 			background-color: rgba(2, 1, 1, 0.7);
@@ -78,7 +78,6 @@ export default {
 	}
 
 	&.bg-2 {
-		background-image: url(~/assets/images/banner/banner-bg-2.jpg);
 		padding-top: 280px;
 		padding-bottom: 235px;
 		@media only screen and (max-width: 767px) {

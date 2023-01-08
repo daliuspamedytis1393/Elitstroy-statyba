@@ -9,7 +9,7 @@
       ]"
     />
 
-    <about-section-one class="pt-100" />
+    <about-section class="pt-100" />
 
     <feature-section class="pt-100" />
   </div>

@@ -48,7 +48,7 @@ export default {
 	padding-bottom: 200px;
 
 	@media only screen and (max-width: 991px) {
-		padding-top: 110px;
+		padding-top: 120px;
 		padding-bottom: 70px;
 	}
 	@media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -67,7 +67,7 @@ export default {
 		z-index: -1;
 	}
 	&.bg-1 {
-		background-image: url(~assets/images/kontaktai/kontaktai.jpg);
+		background-image: url(/image/main.jpg);
 
 	}
 	&.bg-2 {
@@ -76,21 +76,6 @@ export default {
 	}
 	&.bg-3 {
 		background-image: url(~assets/images/error-img.png);
-
-	}
-	&.bg-4 {
-		background-image: url(~assets/images/page-bg/page-bg-4.jpg);
-
-	}
-	&.bg-5 {
-		background-image: url(~assets/images/page-bg/page-bg-5.jpg);
-	}
-	&.bg-6 {
-		background-image: url(~assets/images/page-bg/page-bg-6.jpg);
-
-	}
-	&.bg-7 {
-		background-image: url(~assets/images/page-bg/page-bg-7.jpg);
 
 	}
 }

@@ -3,7 +3,7 @@
     <page-banner
       class="bg-1"
       :page-name="websiteData.title"
-       :links="[{ name: 'Pagrindinis', url: '/' }, { name: websiteData.title }]"
+      :links="[{ name: 'Pagrindinis', url: '/' }, { name: websiteData.title }]"
     />
 
     <div class="contact-section ptb-100">
@@ -13,33 +13,24 @@
             <div class="col-lg-6">
               <div class="contact-form ptb-100">
                 <h2>{{ websiteData.contactTitle }}</h2>
-                <input type="hidden" name="contact" value="contact" />
-                <form
-                  class="form-contact"
-                  name="contact"
-                  method="POST"
-                  data-netlify="true"
-        
-                >
+
+                <form class="form-contact" name="contact" method="POST" data-netlify="true">
+                  <input type="hidden" name="contact" value="contact" />
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Vardas" />
+                        <input type="text" name="name" required class="form-control" placeholder="Vardas" />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <input type="email" name="email" class="form-control" placeholder="Elektroninis paštas" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <input type="text" name="number" class="form-control" placeholder="Telefono numeris" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Tema" />
+                        <input
+                          type="email"
+                          name="email"
+                          required
+                          class="form-control"
+                          placeholder="Elektroninis paštas"
+                        />
                       </div>
                     </div>
                     <div class="col-lg-12">
@@ -48,6 +39,7 @@
                           cols="30"
                           rows="10"
                           name="message"
+                          required
                           class="form-control"
                           placeholder="Jūsų žinutė"
                         ></textarea>
@@ -108,11 +100,11 @@ export default {
           content: this.seoData.contactsMetaDescription,
         },
       ],
-	  link: [
+      link: [
         {
           rel: 'canonical',
-          href: 'https://elitstroy.lt' + this.$route.path
-        }
+          href: 'https://elitstroy.lt' + this.$route.path,
+        },
       ],
     }
   },

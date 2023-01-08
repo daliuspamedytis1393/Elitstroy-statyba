@@ -7,7 +7,7 @@ backend:
   branch: main
 
 media_folder: static/image
-public_folder: /imgage
+public_folder: /image
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:

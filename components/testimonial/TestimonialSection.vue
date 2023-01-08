@@ -21,7 +21,7 @@
               :image="item.photo"
               :name="item.name"
               :text="item.review"
-			  :number="item.number"
+			  :numbers="item.starCount"
             />
           </div>
         </owl-carousel>

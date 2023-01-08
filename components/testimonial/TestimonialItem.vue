@@ -5,7 +5,7 @@
 		<h3>{{ name }}</h3>
 		<span>{{ title }}</span>
 		<ul>
-			<li v-for="(number, index) in starCount">
+			<li v-for="(number, index) in numbers">
 				<i class="icofont-star"></i>
 			</li>
 		</ul>

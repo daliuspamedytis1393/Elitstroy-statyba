@@ -1,9 +1,8 @@
 <template>
   <div class="main-testimonial-item">
-    <nuxt-img loading="lazy" format="webp" :src="image" alt="Image" />
+    <nuxt-img  :src="image" loading="lazy" format="webp" placeholder alt="Image" />
     <p>{{ text }}</p>
     <h3>{{ name }}</h3>
-    <span>{{ title }}</span>
     <ul>
       <li v-for="(number, index) in numbers">
         <i class="icofont-star"></i>
@@ -21,10 +20,6 @@ export default {
       required: true,
     },
     name: {
-      type: String,
-      required: true,
-    },
-    title: {
       type: String,
       required: true,
     },

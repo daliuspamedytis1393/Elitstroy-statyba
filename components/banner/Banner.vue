@@ -65,12 +65,33 @@ export default {
   }
 
   &.bg-1 {
-    background-image: url(/image/main.jpg);
+    position: relative;
+    z-index: 2;
     background-color: $black-color;
 
     &::before {
+      background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/image/main.jpg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-position: center;
+      background-size: cover;
+      animation: opacity 3s ease-out forwards;
       background-color: rgba(2, 1, 1, 0.7);
     }
+  }
+}
+
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
 

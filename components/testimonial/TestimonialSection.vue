@@ -54,6 +54,9 @@ export default {
       return this.$store.state.atsiliepimaiData[0]
     },
   },
+  mounted() {
+	console.log(testimonialSection)
+  }
 }
 </script>
 

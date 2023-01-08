@@ -3,7 +3,7 @@
     <page-banner
       class="bg-1"
       :page-name="websiteData.title"
-      :links="[{ name: 'Pagrindinis', url: '/' }, { name: websiteData.title }]"
+       :links="[{ name: 'Pagrindinis', url: '/' }, { name: websiteData.title }]"
     />
 
     <div class="contact-section ptb-100">
@@ -18,7 +18,6 @@
                   class="form-contact"
                   name="contact"
                   method="POST"
-                  action="/sekmingai-issiusta"
                   data-netlify="true"
         
                 >

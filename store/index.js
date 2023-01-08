@@ -4,6 +4,7 @@ import {
 	SET_ATSILIEPIMAI_DATA,
 	SET_PAGRINDINIS_DATA,
 	SET_KONTAKTAI_DATA,
+	SET_SEO_DATA,
 } from './mutations.type'
 
 export const state = () => ({
@@ -11,7 +12,8 @@ export const state = () => ({
 	projektaiData: [],
 	atsiliepimaiData: [],
 	pagrindinisData: [],
-	kontaktaiData: []
+	kontaktaiData: [],
+	seoData: []
 })
 
 export const mutations = {
@@ -29,6 +31,9 @@ export const mutations = {
 	},
 	[SET_KONTAKTAI_DATA](state, list) {
 		state.kontaktaiData = list
+	},
+	[SET_SEO_DATA](state, list) {
+		state.seoData = list
 	},
 }
 
@@ -75,6 +80,13 @@ export const actions = {
 			/\.json$/
 		)
 		await commit(SET_KONTAKTAI_DATA, actions.getPosts(kontaktaiFiles))
+
+		const seoFiles = await require.context(
+			'~/assets/content/seo/',
+			false,
+			/\.json$/
+		)
+		await commit(SET_SEO_DATA, actions.getPosts(seoFiles))
 
 
 		// ? When adding/changing NetlifyCMS collection types, make sure to:

@@ -13,8 +13,23 @@
 <script>
 export default {
   name: 'IndexPage',
+  computed: {
+    seoData() {
+      return this.$store.state.seoData[0]
+    }
+  },
   head() {
-    return { script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }] }
+    return {
+      title: seoData.homepageMetaTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: seoData.homepageMetaDescription,
+        },
+      ],
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    }
   },
 }
 </script>

@@ -1,10 +1,16 @@
 <template>
-  <!--=== Start Header Section ===-->
   <header class="header-section fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light style-two">
       <div class="container">
         <nuxt-link class="navbar-brand" to="/">
-          <nuxt-img loading="lazy" height="54" width="54" src="/image/logo.png" placeholder alt="Kompanijos logotipas" />
+          <nuxt-img
+            loading="lazy"
+            height="54"
+            width="54"
+            src="/image/logo.png"
+            placeholder
+            alt="Kompanijos logotipas"
+          />
           <h4 class="header-title">Elitstroy</h4>
         </nuxt-link>
 
@@ -17,25 +23,25 @@
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav style-two m-auto">
             <li v-for="(item, index) in menu" :key="'level-1-' + index" class="nav-item">
-              <nuxt-link v-if="item.href" :to="item.href" class="nav-link" exact-active-class="active">{{
-                item.title
-              }}</nuxt-link>
+              <nuxt-link v-if="item.href" :to="item.href" class="nav-link" exact-active-class="active">
+                {{ item.title }}
+              </nuxt-link>
               <template v-else>
                 <a href="javascript:void(0);" class="nav-link dropdown-toggles">{{ item.title }}</a>
 
                 <ul class="sub-menu">
                   <li v-for="(subitem, index2) in item.child" :key="'level-2-' + index2" class="nav-item">
-                    <nuxt-link v-if="subitem.href" :to="subitem.href" class="nav-link" exact-active-class="active">{{
-                      subitem.title
-                    }}</nuxt-link>
+                    <nuxt-link v-if="subitem.href" :to="subitem.href" class="nav-link" exact-active-class="active">
+                      {{ subitem.title }}
+                    </nuxt-link>
                     <template v-else>
                       <a href="#" class="nav-link dropdown-toggles">{{ item.title }}</a>
 
                       <ul class="sub-menu-sub">
                         <li v-for="(subsubitem, index3) in subitem.child" :key="'level-3-' + index3" class="nav-item">
-                          <nuxt-link :to="subsubitem.href" class="nav-link" exact-active-class="active">{{
-                            subsubitem.title
-                          }}</nuxt-link>
+                          <nuxt-link :to="subsubitem.href" class="nav-link" exact-active-class="active">
+                            {{ subsubitem.title }}
+                          </nuxt-link>
                         </li>
                       </ul>
                     </template>
@@ -48,7 +54,6 @@
       </div>
     </nav>
   </header>
-  <!--=== End Header Section ===-->
 </template>
 
 <script>
@@ -186,9 +191,7 @@ nav {
     }
   }
 }
-/*
-15 - Navbar Style
-<<<<======================================================>>>>*/
+
 .navbar {
   background-color: $white-color;
   box-shadow: $box-shadow;

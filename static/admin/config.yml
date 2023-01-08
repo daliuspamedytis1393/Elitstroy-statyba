@@ -92,6 +92,24 @@ collections:
                   choose_url: true,
                   default: '/static/logo.png',
                 }
+  - label: 'seo'
+    name: 'seo'
+    files:
+      - label: 'Puslapių seo'
+        name: 'info'
+        file: 'assets/content/seo/seo.json'
+        format: 'json'
+        editor:
+          preview: false
+        fields:
+          - { label: Pagrindinio puslapio meta pavadinimas, name: homepageMetaTitle, widget: string, hint: 'Pagrindinio puslapio meta pavadinimas' }
+          - { label: Pagrindinio puslapio meta apibūdinimas, name: homepageMetaDescription, widget: string, hint: 'Pagrindinio puslapio meta apibūdinimas' }
+          - { label: Apie mus puslapio meta pavadinimas, name: aboutUsMetaTitle, widget: string, hint: 'Apie mus puslapio meta pavadinimas' }
+          - { label: Apie mus puslapio meta apibūdinimas, name: aboutUsMetaDescription, widget: string, hint: 'Apie mus puslapio meta apibūdinimas' }
+          - { label: Kontaktai puslapio meta pavadinimas, name: contactsMetaTitle, widget: string, hint: 'Kontaktai puslapio meta pavadinimas' }
+          - { label: Kontaktai puslapio meta apibūdinimas, name: contactsMetaDescription, widget: string, hint: 'Kontaktai puslapio meta apibūdinimas' }
+          - { label: Projektai puslapio meta pavadinimas, name: projectsMetaTitle, widget: string, hint: 'Projektai puslapio meta pavadinimas' }
+          - { label: Projektai puslapio meta apibūdinimas, name: projectsMetaDescription, widget: string, hint: 'Projektai puslapio meta apibūdinimas' }
   - name: 'projektai'
     # identifier_field: name
     label: 'projektai'

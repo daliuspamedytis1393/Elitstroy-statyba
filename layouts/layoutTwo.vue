@@ -40,8 +40,8 @@ export default {
 				},
 
 				{
-					href: '/kontaktai',
 					title: 'Kontaktai',
+					href: '/kontaktai',
 				},
 			],
 		}

@@ -4,7 +4,15 @@
       <div class="row flex-direction-column-reverse align-items-center">
         <div class="col-lg-6">
           <div class="about-us-img me-15" data-aos="fade-right" data-aos-delay="400">
-            <nuxt-img loading="lazy" src="/image/apie-mus/apie-mus.jpeg" format="webp" placeholder  height="450" width="450" alt="Image" />
+            <nuxt-img
+              loading="lazy"
+              src="/image/apie-mus/apie-mus.jpeg"
+              format="webp"
+              placeholder
+              height="450"
+              width="450"
+              alt="Image"
+            />
 
             <div class="experience">
               <div class="experience-bg">

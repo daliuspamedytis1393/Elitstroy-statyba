@@ -1,6 +1,6 @@
 <template>
   <div>
-    <banner-one class="bg-1" />
+    <banner class="bg-1" />
 
     <service-section />
 
@@ -16,10 +16,7 @@ export default {
   computed: {
     seoData() {
       return this.$store.state.seoData[0]
-    }
-  },
-  mounted(){
-    console.log(process.env.URL)
+    },
   },
   head() {
     return {
@@ -34,8 +31,8 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://elitstroy.lt' + this.$route.path
-        }
+          href: 'https://elitstroy.lt' + this.$route.path,
+        },
       ],
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
     }

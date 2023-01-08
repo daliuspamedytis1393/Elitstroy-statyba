@@ -87,12 +87,5 @@ export const actions = {
 			/\.json$/
 		)
 		await commit(SET_SEO_DATA, actions.getPosts(seoFiles))
-
-
-		// ? When adding/changing NetlifyCMS collection types, make sure to:
-		// ? 1. Add/rename exact slugs here
-		// ? 2. Add/rename the MUTATION_TYPE names in `./mutations.type.js`
-		// ? 3. Add/rename `pages/YOUR_SLUG_HERE` and use the Vuex store like the included examples
-		// ? If you are adding, add a state, mutation and commit (like above) for it too
 	},
 }

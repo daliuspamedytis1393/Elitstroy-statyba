@@ -18,8 +18,9 @@
                   class="form-contact"
                   name="contact"
                   method="POST"
+                  action="/sekmingai-issiusta"
                   data-netlify="true"
-                  netlify-honeypot="bot-field"
+        
                 >
                   <div class="row">
                     <div class="col-lg-6">

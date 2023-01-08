@@ -6,8 +6,8 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: static/img
-public_folder: /img
+media_folder: static/image
+public_folder: /imgage
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
@@ -66,24 +66,32 @@ collections:
           - { label: Google žemėlapio nuoroda, name: googleMaps, widget: string, hint: 'Google žemėlapio nuoroda' }
   - label: 'atsiliepimai'
     name: 'atsiliepimai'
-    files : 
-    - label: 'Atsiliepimai puslapio informacija'
-      name: 'info'
-      file: 'assets/content/atsiliepimai/atsiliepimai.json'
-      format: 'json'
-      editor:
-        preview: false
-      fields:
-        - { label: PageTitle, name: pageTitle, widget: string }
-        - { label: Title, name: 'title', widget: string }
-        - label: 'Asiliepimas'
-          name: reviews
-          widget: list
-          fields:
-            - { label: Vardas ir pavardė, name: name, widget: string }
-            - { label: Atsiliepimas, name: review, widget: string }
-            - { label: Įvertinimas', name: 'starCount', widget: number }
-            - { label: Paveiksliukas, name: photo, widget: image, required: false }
+    files:
+      - label: 'Atsiliepimai puslapio informacija'
+        name: 'info'
+        file: 'assets/content/atsiliepimai/atsiliepimai.json'
+        format: 'json'
+        editor:
+          preview: false
+        fields:
+          - { label: PageTitle, name: pageTitle, widget: string }
+          - { label: Title, name: 'title', widget: string }
+          - label: 'Asiliepimas'
+            name: reviews
+            widget: list
+            fields:
+              - { label: Vardas ir pavardė, name: name, widget: string }
+              - { label: Atsiliepimas, name: review, widget: string }
+              - { label: Įvertinimas', name: 'starCount', widget: number }
+              - {
+                  label: Paveiksliukas,
+                  name: photo,
+                  widget: image,
+                  required: false,
+                  allow_multiple: true,
+                  choose_url: true,
+                  default: '/static/logo.png',
+                }
   - name: 'projektai'
     # identifier_field: name
     label: 'projektai'

@@ -4,7 +4,7 @@
     <nav class="navbar navbar-expand-lg navbar-light style-two">
       <div class="container">
         <nuxt-link class="navbar-brand" to="/">
-          <nuxt-img loading="lazy" format="webp" height="54" width="54" src="/image/logo.png" alt="Image" />
+          <nuxt-img loading="lazy" height="54" width="54" src="/image/logo.png" placeholder alt="Kompanijos logotipas" />
           <h4 class="header-title">Elitstroy</h4>
         </nuxt-link>
 

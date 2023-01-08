@@ -6,7 +6,7 @@
       <div class="close-mobile-menu">
         <div class="mobile-logo">
           <nuxt-link to="/" class="mobile-logo">
-            <nuxt-img loading="lazy" format="webp" height="54" width="54" src="/image/logo.png" alt="Image" />
+            <nuxt-img loading="lazy" height="54" width="54" src="/image/logo.png" placeholder alt="Kompanijos logotipas" />
             <h4 class="progress-title-holder">Elitstroy</h4>
           </nuxt-link>
         </div>

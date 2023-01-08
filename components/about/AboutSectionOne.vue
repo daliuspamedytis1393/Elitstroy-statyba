@@ -4,7 +4,7 @@
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="about-us-img me-15" data-aos="fade-right" data-aos-delay="400">
-            <nuxt-img loading="lazy" format="webp" src="/image/apie-mus/apie-mus.jpeg" alt="Image" />
+            <nuxt-img loading="lazy" format="webp" placeholder src="/image/apie-mus/apie-mus.jpeg" alt="Image" />
 
             <div class="experience">
               <div class="experience-bg">

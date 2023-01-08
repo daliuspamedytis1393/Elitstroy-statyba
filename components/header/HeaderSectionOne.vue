@@ -25,7 +25,7 @@
       <div class="container">
         <nuxt-link class="navbar-brand" to="/">
           <div class="logo-wrapper">
-            <nuxt-img loading="lazy" format="webp" height="54" width="54" src="/image/logo.png" alt="Image" />
+            <nuxt-img loading="lazy" height="54" width="54" src="/image/logo.png" placeholder alt="Kompanijos logotipas" />
             <h4 class="progress-title-holder">Elitstroy</h4>
           </div>
         </nuxt-link>

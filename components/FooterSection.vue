@@ -11,11 +11,11 @@
               <nuxt-link to="/" class="footer-logo">
                 <nuxt-img
                   loading="lazy"
-                  format="webp"
                   height="54"
                   width="54"
                   src="/image/logo.png"
-                  alt="Image"
+                  alt="Kompanijos logotipas"
+				  placeholder
                 />
                 <h4 class="footer-title">Elitstroy</h4>
               </nuxt-link>

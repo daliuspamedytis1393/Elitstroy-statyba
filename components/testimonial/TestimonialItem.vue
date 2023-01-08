@@ -5,19 +5,7 @@
 		<h3>{{ name }}</h3>
 		<span>{{ title }}</span>
 		<ul>
-			<li>
-				<i class="icofont-star"></i>
-			</li>
-			<li>
-				<i class="icofont-star"></i>
-			</li>
-			<li>
-				<i class="icofont-star"></i>
-			</li>
-			<li>
-				<i class="icofont-star"></i>
-			</li>
-			<li>
+			<li v-for="(number, index) in starCount">
 				<i class="icofont-star"></i>
 			</li>
 		</ul>
@@ -44,6 +32,10 @@ export default {
 			type: String,
 			required: true,
 		},
+		numbers: {
+			type: Number,
+			required: true
+		}
 	},
 }
 </script>

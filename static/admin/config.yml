@@ -82,7 +82,7 @@ collections:
             fields:
               - { label: Vardas ir pavardė, name: name, widget: string }
               - { label: Atsiliepimas, name: review, widget: string }
-              - { label: Įvertinimas', name: 'starCount', widget: number }
+              - { label: Įvertinimas', name: 'starCount', widget: number, min: 1, max: 5 }
               - {
                   label: Paveiksliukas,
                   name: photo,

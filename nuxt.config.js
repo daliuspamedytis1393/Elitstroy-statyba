@@ -47,11 +47,12 @@ export default {
   components: {
     dirs: ['~/components', '~/components/header'],
   },
-
+  target: 'static',
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/style-resources',
+	'@nuxt/image',
   ],
 
   styleResources: {

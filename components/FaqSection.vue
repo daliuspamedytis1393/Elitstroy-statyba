@@ -17,7 +17,7 @@
 
 				<div class="col-lg-6">
 					<div class="faq-img">
-						<img src="~assets/images/faq-img.jpg" alt="Image" />
+						<nuxt-img src="~assets/images/faq-img.jpg" alt="Image" />
 					</div>
 				</div>
 			</div>

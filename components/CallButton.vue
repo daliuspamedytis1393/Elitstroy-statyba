@@ -28,7 +28,6 @@ export default {
   padding: 1rem;
   border-radius: 100%;
   color: $white-color;
-  animation: call-button 0.6s linear infinite;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -47,16 +46,5 @@ export default {
 
 .call-button-wrapper .call-button:hover i {
   transform: rotate(135deg);
-}
-
-@keyframes call-button {
-  0% {
-    box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2),
-      0 0 0 10px rgba(236, 139, 0, 0.2);
-  }
-  100% {
-    box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2),
-      0 0 0 20px rgba(236, 139, 0, 0);
-  }
 }
 </style>

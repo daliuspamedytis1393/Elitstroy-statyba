@@ -31,12 +31,6 @@
 				</owl-carousel>
 			</client-only>
 		</div>
-
-		<!-- <img
-			src="~assets/images/services-bg-shape.png"
-			class="services-bg-shape"
-			alt="Image"
-		/> -->
 	</section>
 </template>
 

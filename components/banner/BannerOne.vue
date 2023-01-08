@@ -71,6 +71,7 @@ export default {
 
 	&.bg-1 {
 		background-image: url(/image/main.jpg);
+		background-color: $black-color;
 
 		&::before {
 			background-color: rgba(2, 1, 1, 0.7);

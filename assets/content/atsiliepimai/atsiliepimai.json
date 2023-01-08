@@ -6,12 +6,14 @@
     {
       "name": "Inga Kubiliūtė",
       "review": "Ačiū už išklotas trinkeles ir sutvarkytą aplinką, vaizdas nuostabus!",
-      "starCount": 5
+      "starCount": 5,
+      "photo": "/imgage/inga-klimasauskiene3-600x600.jpg"
     },
     {
       "name": "Mykolas Majauskas",
       "review": "Dėkoju už šauniai atliktus trinkelių klojimo darbus. Viskas puiku.",
-      "starCount": 4
+      "starCount": 4,
+      "photo": "/imgage/download-1.jpg"
     }
   ]
 }

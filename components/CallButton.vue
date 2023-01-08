@@ -21,8 +21,8 @@ export default {
   right: 24px;
   bottom: 24px;
   background: $main-color;
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   padding: 1rem;
   border-radius: 100%;
   color: $white-color;
@@ -40,7 +40,7 @@ export default {
 
 .call-buton .cc-calto-action-ripple i {
   transition: 0.3s ease;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .call-buton .cc-calto-action-ripple:hover i {

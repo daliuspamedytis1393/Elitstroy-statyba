@@ -63,35 +63,35 @@ export default {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(1, 5, 9, 0.77);
+		background-color: rgba(1, 5, 9, 0.5);
 		z-index: -1;
 	}
 	&.bg-1 {
 		background-image: url(~assets/images/kontaktai/kontaktai.jpg);
-		background-attachment: fixed;
+
 	}
 	&.bg-2 {
 		background-image: url(~assets/images/page-bg/page-bg-2.jpg);
-		background-attachment: fixed;
+
 	}
 	&.bg-3 {
 		background-image: url(~assets/images/error-img.png);
-		background-attachment: fixed;
+
 	}
 	&.bg-4 {
 		background-image: url(~assets/images/page-bg/page-bg-4.jpg);
-		background-attachment: fixed;
+
 	}
 	&.bg-5 {
 		background-image: url(~assets/images/page-bg/page-bg-5.jpg);
 	}
 	&.bg-6 {
 		background-image: url(~assets/images/page-bg/page-bg-6.jpg);
-		background-attachment: fixed;
+
 	}
 	&.bg-7 {
 		background-image: url(~assets/images/page-bg/page-bg-7.jpg);
-		background-attachment: fixed;
+
 	}
 }
 .page-banner-content {

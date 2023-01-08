@@ -71,7 +71,6 @@ export default {
 
 	&.bg-1 {
 		background-image: url(~/assets/images/pagrindinis/pagrindinis.jpg);
-		background-attachment: fixed;
 
 		&::before {
 			background-color: rgba(2, 1, 1, 0.7);

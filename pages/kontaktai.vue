@@ -13,7 +13,8 @@
             <div class="col-lg-6">
               <div class="contact-form ptb-100">
                 <h2>{{ websiteData.contactTitle }}</h2>
-                <form class="form-contact" netlify name="contact" method="POST" data-netlify="true">
+                <form class="form-contact" netlify name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                  <input type="hidden" name="contact" value="contact" />
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">

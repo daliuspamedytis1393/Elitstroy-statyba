@@ -3,10 +3,13 @@
     <nav class="navbar navbar-expand-lg navbar-light style-two">
       <div class="container">
         <nuxt-link class="navbar-brand" to="/">
-          <img
-            height="54"
-            width="54"
+          <nuxt-img
+            height="150"
+            width="150"
+            class="logo"
             src="/image/logo.png"
+            lazy="loading"
+            placeholder
             alt="Kompanijos logotipas"
           />
           <h4 class="header-title">Elitstroy</h4>
@@ -77,6 +80,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.logo {
+  height: 54px;
+  width: 54px;
+}
+
 nav {
   width: 100%;
   &.is-fixed {

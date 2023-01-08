@@ -4,7 +4,7 @@
       <div class="row flex-direction-column-reverse align-items-center">
         <div class="col-lg-6">
           <div class="about-us-img me-15" data-aos="fade-right" data-aos-delay="400">
-            <nuxt-img loading="lazy" format="webp" placeholder src="/image/apie-mus/apie-mus.jpeg" alt="Image" />
+            <nuxt-img loading="lazy" src="/image/apie-mus/apie-mus.jpeg" format="webp" placeholder  height="450" width="450" alt="Image" />
 
             <div class="experience">
               <div class="experience-bg">
@@ -67,7 +67,7 @@ export default {
     margin-bottom: 30px;
     padding-top: 10px;
     padding-right: 10px;
-	margin-top: 40px;
+    margin-top: 40px;
   }
 
   .experience {

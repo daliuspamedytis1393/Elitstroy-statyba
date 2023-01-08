@@ -9,11 +9,13 @@
           <div class="col-lg-3 col-sm-6">
             <div class="main-footer-item" data-aos="fade-up" data-aos-delay="100">
               <nuxt-link to="/" class="footer-logo">
-                <img
+                <nuxt-img
+                  class="logo"
                   loading="lazy"
-                  height="54"
-                  width="54"
+                  height="150"
+                  width="150"
                   src="/image/logo.png"
+                  placeholder
                   alt="Kompanijos logotipas"
                 />
                 <h4 class="footer-title">Elitstroy</h4>
@@ -89,6 +91,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.logo {
+  width: 54px;
+  height: 54px;
+}
 .footer-section {
   background-color: #0a0a0a;
   background-position: center;

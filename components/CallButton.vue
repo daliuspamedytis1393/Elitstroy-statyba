@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss">
 .call-button-wrapper .call-button {
-  z-index: 99999;
+  z-index: 999919;
   position: fixed;
   right: 24px;
   bottom: 24px;

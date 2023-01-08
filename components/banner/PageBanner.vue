@@ -70,10 +70,6 @@ export default {
 		background-image: url(/image/main.jpg);
 
 	}
-	&.bg-2 {
-		background-image: url(~assets/images/page-bg/page-bg-2.jpg);
-
-	}
 	&.bg-3 {
 		background-image: url(~assets/images/error-img.png);
 

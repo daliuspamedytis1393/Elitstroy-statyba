@@ -76,41 +76,6 @@ export default {
 			background-color: rgba(2, 1, 1, 0.7);
 		}
 	}
-
-	&.bg-2 {
-		padding-top: 280px;
-		padding-bottom: 235px;
-		@media only screen and (max-width: 767px) {
-			padding-top: 115px;
-			padding-bottom: 170px;
-		}
-		@media only screen and (min-width: 768px) and (max-width: 991px) {
-			padding-top: 130px;
-			padding-bottom: 185px;
-		}
-
-		@media only screen and (min-width: 992px) and (max-width: 1199px) {
-			padding-top: 230px;
-		}
-
-		&::before {
-			background-color: rgba(2, 1, 1, 0.6);
-		}
-	}
-
-	&.bg-3 {
-		background-image: url(~/assets/images/banner/banner-bg-3.jpg);
-		padding-top: 280px;
-		padding-bottom: 235px;
-		@media only screen and (max-width: 991px) {
-			padding-top: 130px;
-			padding-bottom: 70px;
-		}
-
-		&::before {
-			background-color: rgba(2, 1, 1, 0.81);
-		}
-	}
 }
 
 .banner-content {

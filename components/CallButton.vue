@@ -1,6 +1,8 @@
 <template>
-  <section class="call-buton">
-    <a class="cc-calto-action-ripple" :href="`tel:${websiteData.phone}`"><i class="fa fa-phone"></i> </a>
+  <section class="call-button-wrapper">
+    <a class="call-button" aria-label="Skambinti į telefono numerį" :href="`tel:${websiteData.phone}`"
+      ><i class="fa fa-phone"></i>
+    </a>
   </section>
 </template>
 
@@ -15,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
-.call-buton .cc-calto-action-ripple {
+.call-button-wrapper .call-button {
   z-index: 99999;
   position: fixed;
   right: 24px;
@@ -26,7 +28,7 @@ export default {
   padding: 1rem;
   border-radius: 100%;
   color: $white-color;
-  animation: cc-calto-action-ripple 0.6s linear infinite;
+  animation: call-button 0.6s linear infinite;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -38,25 +40,21 @@ export default {
   }
 }
 
-.call-buton .cc-calto-action-ripple i {
+.call-button-wrapper .call-button i {
   transition: 0.3s ease;
   font-size: 2rem;
 }
 
-.call-buton .cc-calto-action-ripple:hover i {
+.call-button-wrapper .call-button:hover i {
   transform: rotate(135deg);
 }
 
-@keyframes cc-calto-action-ripple {
+@keyframes call-button {
   0% {
-    -webkit-box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2),
-      0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2);
     box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2),
       0 0 0 10px rgba(236, 139, 0, 0.2);
   }
   100% {
-    -webkit-box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2),
-      0 0 0 10px rgba(236, 139, 0, 0.2), 0 0 0 20px rgba(236, 139, 0, 0);
     box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2),
       0 0 0 20px rgba(236, 139, 0, 0);
   }

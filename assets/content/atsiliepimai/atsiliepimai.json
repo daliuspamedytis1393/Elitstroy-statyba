@@ -1,3 +1,17 @@
 {
-    "hello": {}
+  "hello": {},
+  "pageTitle": "Atsiliepimai",
+  "title": "Ką kalba apie mus",
+  "reviews": [
+    {
+      "name": "Inga Kubiliūtė",
+      "review": "Ačiū už išklotas trinkeles ir sutvarkytą aplinką, vaizdas nuostabus!",
+      "starCount": 5
+    },
+    {
+      "name": "Mykolas Majauskas",
+      "review": "Dėkoju už šauniai atliktus trinkelių klojimo darbus. Viskas puiku.",
+      "starCount": 4
+    }
+  ]
 }

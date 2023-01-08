@@ -3,8 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light style-two">
       <div class="container">
         <nuxt-link class="navbar-brand" to="/">
-          <nuxt-img
-            loading="lazy"
+          <img
             height="54"
             width="54"
             src="/image/logo.png"
@@ -59,7 +58,7 @@
 import { headerScroll, OpenMobileMenu } from '~/mixins/headerFunctions'
 
 export default {
-  name: 'HeaderSectionTwo',
+  name: 'Header',
   props: {
     menu: {
       type: Array,

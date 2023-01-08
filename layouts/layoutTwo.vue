@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<HeaderSectionTwo :menu="menu" />
+		<Header :menu="menu" />
 
 		<MobileMenu :menu="menu" />
 
@@ -14,14 +14,14 @@
 
 <script>
 import MobileMenu from '~/components/header/MobileMenu'
-import HeaderSectionTwo from '~/components/header/HeaderSectionTwo'
+import Header from '~/components/header/Header'
 import CallButton from '~/components/CallButton.vue'
 import FooterSection from '~/components/FooterSection'
 
 import aosMixin from '~/mixins/aos-mixin'
 export default {
 	name: 'layoutTwo',
-	components: { FooterSection, HeaderSectionTwo, MobileMenu, CallButton },
+	components: { FooterSection, Header, MobileMenu, CallButton },
 	mixins: [aosMixin],
 	data() {
 		return {

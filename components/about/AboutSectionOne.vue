@@ -1,7 +1,7 @@
 <template>
   <section class="about-us-section pb-100">
     <div class="container">
-      <div class="row flex-direction-column-reverse  align-items-center">
+      <div class="row flex-direction-column-reverse align-items-center">
         <div class="col-lg-6">
           <div class="about-us-img me-15" data-aos="fade-right" data-aos-delay="400">
             <nuxt-img loading="lazy" format="webp" placeholder src="/image/apie-mus/apie-mus.jpeg" alt="Image" />
@@ -51,6 +51,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.flex-direction-column-reverse {
+  @media only screen and (max-width: 767px) {
+    flex-direction: column-reverse !important;
+  }
+}
 .about-us-img {
   border-top: 5px solid $main-color;
   border-right: 5px solid $main-color;
@@ -62,6 +67,7 @@ export default {
     margin-bottom: 30px;
     padding-top: 10px;
     padding-right: 10px;
+	margin-top: 40px;
   }
 
   .experience {
@@ -213,12 +219,6 @@ export default {
         left: 0;
         color: $main-color;
       }
-    }
-  }
-
-  .flex-direction-column-reverse {
-    @media only screen and (max-width: 767px) {
-      flex-direction: column-reverse!important;
     }
   }
 

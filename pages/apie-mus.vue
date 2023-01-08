@@ -9,9 +9,7 @@
       ]"
     />
 
-    <about-section-two />
-
-    <about-section-one class="ptb-100" />
+    <about-section-one />
 
     <feature-section class="pt-100" />
   </div>

@@ -59,7 +59,7 @@ collections:
         file: 'assets/content/kontaktai/kontaktai.json'
         format: 'json'
         editor:
-          preview: true
+          preview: false
         fields:
           - { label: Puslapio antraštė, name: title, widget: string, hint: 'Kontaktai puslapio pavadinimas' }
           - { label: Kontaktai pavadinimas, name: contactTitle, widget: string, hint: 'Sekcijos pavadinimas' }
@@ -72,7 +72,7 @@ collections:
       file: 'assets/content/atsiliepimai/atsiliepimai.json'
       format: 'json'
       editor:
-        preview: true
+        preview: false
       fields:
         - { label: PageTitle, name: pageTitle, widget: string }
         - { label: Title, name: 'title', widget: string }
@@ -83,7 +83,7 @@ collections:
             - { label: Vardas ir pavardė, name: name, widget: string }
             - { label: Atsiliepimas, name: review, widget: string }
             - { label: Įvertinimas', name: 'starCount', widget: number }
-            - { label: Paveiksliukas, name: photo, widget: image }
+            - { label: Paveiksliukas, name: photo, widget: image, required: false }
   - name: 'projektai'
     # identifier_field: name
     label: 'projektai'

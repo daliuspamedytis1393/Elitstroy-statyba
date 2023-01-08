@@ -13,8 +13,16 @@
             <div class="col-lg-6">
               <div class="contact-form ptb-100">
                 <h2>{{ websiteData.contactTitle }}</h2>
-                <form class="form-contact" netlify name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
-                  <input type="hidden" name="contact" value="contact" />
+                <form
+                  class="form-contact"
+                  method="POST"
+                  name="contacts"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  data-netlify-recaptcha="true"
+                  action="/sekmingai-issiusta"
+                >
+                  <input type="hidden" name="contacts" value="contacts" />
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
@@ -42,6 +50,7 @@
                           class="form-control"
                           placeholder="Jūsų žinutė"
                         ></textarea>
+                        <div data-netlify-recaptcha="true"></div>
                       </div>
                     </div>
                     <div class="col-12">

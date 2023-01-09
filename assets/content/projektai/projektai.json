@@ -1,5 +1,12 @@
 {
   "hello": {},
   "pageTitle": "Projektai",
-  "title": "Mūsų įvykdyti projektai"
+  "title": "Mūsų įvykdyti projektai",
+  "projects": [
+    {
+      "photo": "/image/5-projektas.jpeg",
+      "description": "Pilnos komplektacijos namo statybos metu buvo pastatytas pamatas, sienos ir stogas, taip pat buvo įrengti langai ir durys. Viduje buvo atlikti apdailos darbai, įrengti inžineriniai tinklai ir baldai. Namas taip pat buvo apželdintas ir įrengti aplinkui kelių ir gėlynų.",
+      "name": "Gyvenamųjų namų statybos"
+    }
+  ]
 }

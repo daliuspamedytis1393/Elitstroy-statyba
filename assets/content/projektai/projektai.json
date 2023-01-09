@@ -17,6 +17,11 @@
       "photo": "/image/2-projektas.jpeg",
       "name": "Tvoros statybos",
       "description": "Tvoros statybos metu buvo išpilti pamatai,  buvo apsaugota spalva tam tikra medžiaga ir įrengta elektrinė vartų sistema."
+    },
+    {
+      "photo": "/image/namo.jpeg",
+      "name": "Gyvenamojo namo statybos",
+      "description": "Gyvenamojo namo statybos metu buvo pastatytas pamatas, sienos ir stogas, taip pat buvo įrengti langai ir durys. Viduje buvo atlikti apdailos darbai, įrengti inžineriniai tinklai ir baldai. Taip pat buvo įrengta terasa namo pakraštyje ir atlikta elektros instaliacija."
     }
   ]
 }

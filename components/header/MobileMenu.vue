@@ -6,19 +6,20 @@
           <nuxt-link to="/" class="mobile-logo">
             <nuxt-img
               loading="lazy"
-              height="54"
-              width="54"
+              height="150"
+              width="150"
+              class="logo"
               src="/image/logo.png"
-              placeholder
+              :placeholder="15"
               alt="Kompanijos logotipas"
             />
             <h4 class="progress-title-holder">Elitstroy</h4>
           </nuxt-link>
         </div>
 
-        <a class="close-btn" @click="CloseMobileMenu">
+        <div class="close-btn" @click="CloseMobileMenu">
           <i class="icofont-close-line"></i>
-        </a>
+        </div>
       </div>
       <sidebar-menu :menu="menu" theme="white-theme" class="side-mobile-menu" @item-click="onItemClick">
         <template v-slot:dropdown-icon="{ isOpen }">
@@ -56,6 +57,10 @@ export default {
 </script>
 
 <style lang="scss">
+.logo {
+  height: 54px;
+  width: 54px;
+}
 .menu-slide-bar {
   position: fixed;
   overflow-y: auto;

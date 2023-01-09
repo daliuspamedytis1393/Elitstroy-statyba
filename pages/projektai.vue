@@ -20,12 +20,9 @@ import LazyHydrate from 'vue-lazy-hydration'
 import PageBanner from '~/components/banner/PageBanner'
 
 export default {
-  components: {
-    LazyHydrate,
-  },
   scrollToTop: true,
   name: 'projects',
-  components: { PageBanner },
+  components: { PageBanner, LazyHydrate },
   layout: 'layoutTwo',
   computed: {
     seoData() {

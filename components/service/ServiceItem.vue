@@ -5,7 +5,14 @@
       {{ title }}
     </h3>
     <p class="text-black">{{ description }}</p>
-    <img src="~assets/images/services-card-shape.png" class="services-card-shape" alt="Image" />
+    <nuxt-img
+      format="webp"
+      loading="lazy"
+      src="image/services-card-shape.png"
+      :placeholder="15"
+      class="services-card-shape"
+      alt="Image"
+    />
   </div>
 </template>
 

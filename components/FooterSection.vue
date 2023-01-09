@@ -18,7 +18,7 @@
                   placeholder
                   alt="Kompanijos logotipas"
                 />
-                <h4 class="footer-title">Elitstroy</h4>
+                <p class="footer-title">Elitstroy</p>
               </nuxt-link>
             </div>
           </div>
@@ -105,6 +105,8 @@ export default {
 }
 .footer-title {
   color: white;
+  font-weight: 700;
+  font-size: 1.275rem;
 }
 .main-footer-item {
   margin-bottom: 30px;

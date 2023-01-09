@@ -2,7 +2,6 @@
   <section class="testimonial-section ptb-100">
     <div class="container">
       <main-title :sub-title="testimonialSection.pageTitle" :title="testimonialSection.title" />
-      <client-only>
         <owl-carousel
           class="testimonial-slider"
           :items="options.items"
@@ -21,11 +20,10 @@
               :image="item.photo"
               :name="item.name"
               :text="item.review"
-			  :numbers="item.starCount"
+              :numbers="item.starCount"
             />
           </div>
         </owl-carousel>
-      </client-only>
     </div>
   </section>
 </template>

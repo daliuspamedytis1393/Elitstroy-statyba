@@ -1,15 +1,23 @@
 <template>
-	<div>
-		<Header :menu="menu" />
+  <div>
+    <LazyHydrate when-idle>
+      <Header :menu="menu" />
+    </LazyHydrate>
 
-		<MobileMenu :menu="menu" />
+    <LazyHydrate when-idle>
+      <MobileMenu :menu="menu" />
+    </LazyHydrate>
 
-		<Nuxt />
+    <Nuxt />
 
-		<CallButton />
+    <LazyHydrate when-idle>
+      <CallButton />
+    </LazyHydrate>
 
-		<FooterSection />
-	</div>
+    <LazyHydrate when-visible>
+      <FooterSection />
+    </LazyHydrate>
+  </div>
 </template>
 
 <script>
@@ -17,34 +25,35 @@ import MobileMenu from '~/components/header/MobileMenu'
 import Header from '~/components/header/Header'
 import CallButton from '~/components/CallButton.vue'
 import FooterSection from '~/components/FooterSection'
+import LazyHydrate from 'vue-lazy-hydration'
 
 import aosMixin from '~/mixins/aos-mixin'
 export default {
-	name: 'layoutTwo',
-	components: { FooterSection, Header, MobileMenu, CallButton },
-	mixins: [aosMixin],
-	data() {
-		return {
-			menu: [
-				{
-					title: 'Pagrindinis',
-					href: '/',
-				},
-				{
-					title: 'Apie mus',
-					href: '/apie-mus',
-				},
-				{
-					title: 'Projektai',
-					href: '/projektai',
-				},
+  name: 'layoutTwo',
+  components: { FooterSection, Header, MobileMenu, CallButton, LazyHydrate },
+  mixins: [aosMixin],
+  data() {
+    return {
+      menu: [
+        {
+          title: 'Pagrindinis',
+          href: '/',
+        },
+        {
+          title: 'Apie mus',
+          href: '/apie-mus',
+        },
+        {
+          title: 'Projektai',
+          href: '/projektai',
+        },
 
-				{
-					title: 'Kontaktai',
-					href: '/kontaktai',
-				},
-			],
-		}
-	},
+        {
+          title: 'Kontaktai',
+          href: '/kontaktai',
+        },
+      ],
+    }
+  },
 }
 </script>

@@ -1,19 +1,30 @@
 <template>
   <div>
-    <banner class="bg-1" />
+    <Banner class="bg-1" />
 
-    <service-section />
+    <LazyHydrate when-visible>
+      <ServiceSection />
+    </LazyHydrate>
 
-    <project-section />
+    <LazyHydrate when-visible>
+      <ProjectSection />
+    </LazyHydrate>
 
-    <testimonial-section />
+    <LazyHydrate when-visible>
+      <TestimonialSection />
+    </LazyHydrate>
   </div>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration';
+
 export default {
   scrollToTop: true,
   name: 'IndexPage',
+  components: {
+    LazyHydrate
+  },
   computed: {
     seoData() {
       return this.$store.state.seoData[0]

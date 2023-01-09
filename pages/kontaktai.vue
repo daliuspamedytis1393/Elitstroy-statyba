@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-banner
+    <PageBanner
       class="bg-1"
       :page-name="websiteData.title"
       :links="[{ name: 'Pagrindinis', url: '/' }, { name: websiteData.title }]"

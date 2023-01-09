@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-banner
+    <PageBanner
       class="bg-1"
       :page-name="projectsSection.pageTitle"
       :links="[
@@ -9,13 +9,20 @@
       ]"
     />
 
-    <project-section />
+    <LazyHydrate when-visible>
+      <ProjectSection />
+    </LazyHydrate>
   </div>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration'
 import PageBanner from '~/components/banner/PageBanner'
+
 export default {
+  components: {
+    LazyHydrate,
+  },
   scrollToTop: true,
   name: 'projects',
   components: { PageBanner },
@@ -38,11 +45,11 @@ export default {
           content: this.seoData.projectsMetaDescription,
         },
       ],
-	  link: [
+      link: [
         {
           rel: 'canonical',
-          href: 'https://elitstroy.lt' + this.$route.path
-        }
+          href: 'https://elitstroy.lt' + this.$route.path,
+        },
       ],
     }
   },

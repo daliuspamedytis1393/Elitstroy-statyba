@@ -19,9 +19,12 @@
                   method="POST"
                   action="/sekmingai-issiusta"
                   data-netlify="true"
+                  data-netlify-honeypot="bot-field"
                   id="contact-form"
                 >
                   <input type="hidden" name="contacts" value="contacts" />
+
+                  <input :value="this.$route.path" type="hidden" name="location" />
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">

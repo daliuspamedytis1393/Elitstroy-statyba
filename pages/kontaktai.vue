@@ -15,12 +15,12 @@
                 <h2>{{ websiteData.contactTitle }}</h2>
                 <form
                   class="form-contact"
-                  method="POST"
                   name="contacts"
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
-                  data-netlify-recaptcha="true"
+                  method="POST"
                   action="/sekmingai-issiusta"
+                  data-netlify-recaptcha="true"
+                  data-netlify="true"
+                  id="contact-form"
                 >
                   <input type="hidden" name="contacts" value="contacts" />
                   <div class="row">

@@ -4,9 +4,9 @@
 
     <service-section />
 
-    <testimonial-section />
-
     <project-section />
+
+    <testimonial-section />
   </div>
 </template>
 

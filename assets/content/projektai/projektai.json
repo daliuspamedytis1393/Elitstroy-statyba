@@ -12,6 +12,11 @@
       "photo": "/image/7-projektas.jpeg",
       "name": "Gyvenamojo namo statybos",
       "description": "Gyvenamojo namo statybos procese buvo įgyvendintos pamatų, sienų ir stogo konstrukcijos, taip pat įrengti langai ir durys. Viduje buvo atliktos apdailos darbai, sujungti inžineriniai tinklai ir sumontuoti baldai. Aplink namą buvo atliktas apželdinimas, sukurtos kelios ir gėlynai."
+    },
+    {
+      "photo": "/image/2-projektas.jpeg",
+      "name": "Tvoros statybos",
+      "description": "Tvoros statybos metu buvo išpilti pamatai,  buvo apsaugota spalva tam tikra medžiaga ir įrengta elektrinė vartų sistema."
     }
   ]
 }

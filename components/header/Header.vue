@@ -24,9 +24,9 @@
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav style-two m-auto">
             <li v-for="(item, index) in menu" :key="'level-1-' + index" class="nav-item">
-              <nuxt-link v-if="item.href" @click.prevent="scroll()" :to="item.href" class="nav-link" exact-active-class="active">
+              <a v-if="item.href" @click.prevent="pushRouter(item.href)" class="nav-link" exact-active-class="active">
                 {{ item.title }}
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </div>
@@ -53,10 +53,9 @@ export default {
     OpenMobileMenu() {
       OpenMobileMenu()
     },
-    scroll() {
-      window.scrollTo(0,0)
-      console.log('afa')
-    }
+    pushRouter(link) {
+      this.$router.push(link)
+    },
   },
 }
 </script>

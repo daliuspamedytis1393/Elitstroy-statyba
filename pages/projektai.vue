@@ -16,6 +16,7 @@
 <script>
 import PageBanner from '~/components/banner/PageBanner'
 export default {
+  scrollToTop: true,
   name: 'projects',
   components: { PageBanner },
   layout: 'layoutTwo',

@@ -87,6 +87,7 @@
 import PageBanner from '~/components/banner/PageBanner'
 
 export default {
+  scrollToTop: true,
   name: 'apie-mus',
   components: { PageBanner },
   layout: 'layoutTwo',

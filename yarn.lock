@@ -3807,6 +3807,11 @@
   "resolved" "https://registry.npmjs.org/before-after-hook/-/before-after-hook-2.2.3.tgz"
   "version" "2.2.3"
 
+"bezier-easing@2.1.0":
+  "integrity" "sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig=="
+  "resolved" "https://registry.npmjs.org/bezier-easing/-/bezier-easing-2.1.0.tgz"
+  "version" "2.1.0"
+
 "big.js@^5.2.2":
   "integrity" "sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ=="
   "resolved" "https://registry.npmjs.org/big.js/-/big.js-5.2.2.tgz"
@@ -8420,6 +8425,11 @@
     "has" "^1.0.3"
     "side-channel" "^1.0.4"
 
+"intersection-observer@^0.7.0":
+  "integrity" "sha512-Id0Fij0HsB/vKWGeBe9PxeY45ttRiBmhFyyt/geBdDHBYNctMRTE3dC1U3ujzz3lap+hVXlEcVaB56kZP/eEUg=="
+  "resolved" "https://registry.npmjs.org/intersection-observer/-/intersection-observer-0.7.0.tgz"
+  "version" "0.7.0"
+
 "into-stream@^3.1.0":
   "integrity" "sha512-TcdjPibTksa1NQximqep2r17ISRiNE9fwlfbg3F8ANdvP5/yrFTew86VcO//jk4QTaMlbjypPBq76HN2zaKfZQ=="
   "resolved" "https://registry.npmjs.org/into-stream/-/into-stream-3.1.0.tgz"
@@ -10653,6 +10663,14 @@
   "integrity" "sha512-4jbtZXNAsfZbAHiiqjLPBiCl16dES1zI4Hpzzxw61Tk+loF+sBDBKx1ICKKKwIqQ7M0mFn1TmkN7euSncWgHiQ=="
   "resolved" "https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz"
   "version" "1.0.1"
+
+"nuxt-lazy-load@^1.2.9":
+  "integrity" "sha512-TB9k4s9d/M1k3hLasBQChkHFTSDlkov2AQNcE1d6vFuLuy4cjvVnoVO8VRHaVtIKPETbwmsDyc+mmi87LJZ7pg=="
+  "resolved" "https://registry.npmjs.org/nuxt-lazy-load/-/nuxt-lazy-load-1.2.9.tgz"
+  "version" "1.2.9"
+  dependencies:
+    "intersection-observer" "^0.7.0"
+    "string-replace-loader" "^2.1.1"
 
 "nuxt@^2.15.8":
   "integrity" "sha512-ceK3qLg/Baj7J8mK9bIxqw9AavrF+LXqwYEreBdY/a4Sj8YV4mIvhqea/6E7VTCNNGvKT2sJ/TTJjtfQ597lTA=="
@@ -13732,6 +13750,14 @@
   dependencies:
     "safe-buffer" "~5.1.0"
 
+"string-replace-loader@^2.1.1":
+  "integrity" "sha512-HYBIHStViMKLZC/Lehxy42OuwsBaPzX/LjcF5mkJlE2SnHXmW6SW6eiHABTXnY8ZCm/REbdJ8qnA0ptmIzN0Ng=="
+  "resolved" "https://registry.npmjs.org/string-replace-loader/-/string-replace-loader-2.3.0.tgz"
+  "version" "2.3.0"
+  dependencies:
+    "loader-utils" "^1.2.3"
+    "schema-utils" "^2.6.5"
+
 "string-width@^1.0.1":
   "integrity" "sha512-0XsVpQLnVCXHJfyEs8tC0zpTVIr5PKKsQtkT29IwupnPTjtPmQ3xT/4yCREF9hYkV/3M3kzcUTSAZT6a6h81tw=="
   "resolved" "https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz"
@@ -15001,6 +15027,13 @@
   "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-3.5.3.tgz"
   "version" "3.5.3"
 
+"vue-scrollto@^2.20.0":
+  "integrity" "sha512-7i+AGKJTThZnMEkhIPgrZjyAX+fXV7/rGdg+CV283uZZwCxwiMXaBLTmIc5RTA4uwGnT+E6eJle3mXQfM2OD3A=="
+  "resolved" "https://registry.npmjs.org/vue-scrollto/-/vue-scrollto-2.20.0.tgz"
+  "version" "2.20.0"
+  dependencies:
+    "bezier-easing" "2.1.0"
+
 "vue-server-renderer@^2.6.12", "vue-server-renderer@^2.6.14":
   "integrity" "sha512-HifYRa/LW7cKywg9gd4ZtvtRuBlstQBao5ZCWlg40fyB4OPoGfEXAzxb0emSLv4pBDOHYx0UjpqvxpiQFEuoLA=="
   "resolved" "https://registry.npmjs.org/vue-server-renderer/-/vue-server-renderer-2.6.14.tgz"
@@ -15148,7 +15181,7 @@
     "source-list-map" "^2.0.0"
     "source-map" "~0.6.1"
 
-"webpack@*", "webpack@^2.0.0 || ^3.0.0 || ^4.0.0", "webpack@^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0", "webpack@^3.0.0 || ^4.0.0", "webpack@^3.0.0 || ^4.0.0 || ^5.0.0", "webpack@^3.0.0 || ^4.1.0 || ^5.0.0-0", "webpack@^4.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.36.0 || ^5.0.0", "webpack@^4.4.0 || ^5.0.0", "webpack@^4.46.0", "webpack@>=2", "webpack@>=4.0.0":
+"webpack@*", "webpack@^2.0.0 || ^3.0.0 || ^4.0.0", "webpack@^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0", "webpack@^3.0.0 || ^4.0.0", "webpack@^3.0.0 || ^4.0.0 || ^5.0.0", "webpack@^3.0.0 || ^4.1.0 || ^5.0.0-0", "webpack@^4.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.36.0 || ^5.0.0", "webpack@^4.4.0 || ^5.0.0", "webpack@^4.46.0", "webpack@>=2", "webpack@>=4.0.0", "webpack@1 || 2 || 3 || 4":
   "integrity" "sha512-6jJuJjg8znb/xRItk7bkT0+Q7AHCYjjFnvKIWQPkNIOyRqoCGvkOs0ipeQzrqz4l5FtN5ZI/ukEHroeX/o1/5Q=="
   "resolved" "https://registry.npmjs.org/webpack/-/webpack-4.46.0.tgz"
   "version" "4.46.0"

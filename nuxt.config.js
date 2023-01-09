@@ -78,7 +78,7 @@ export default {
   build: {},
 
   // configuration for server to serve form subfolder
-  // router: {
-  // 	base: '/nuxt/'
-  // },
+  router: {
+  	trailingSlash: false,
+  },
 }

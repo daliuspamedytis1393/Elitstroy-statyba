@@ -24,7 +24,7 @@
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav style-two m-auto">
             <li v-for="(item, index) in menu" :key="'level-1-' + index" class="nav-item">
-              <a v-if="item.href" @click.prevent="pushRouter(item.href)" class="nav-link" exact-active-class="active">
+              <a v-if="item.href" :href="item.href" class="nav-link" exact-active-class="active">
                 {{ item.title }}
               </a>
             </li>

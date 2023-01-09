@@ -81,6 +81,6 @@ export default {
 
   // configuration for server to serve form subfolder
   router: {
-    trailingSlash: false,
+    trailingSlash: true,
   },
 }

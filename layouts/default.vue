@@ -39,14 +39,14 @@ export default {
         },
         {
           title: 'Apie mus',
-          href: '/apie-mus',
+          href: '/apie-mus/',
         },
         {
           title: 'Projektai',
-          href: '/projektai',
+          href: '/projektai/',
         },
         {
-          href: '/kontaktai',
+          href: '/kontaktai/',
           title: 'Kontaktai',
         },
       ],

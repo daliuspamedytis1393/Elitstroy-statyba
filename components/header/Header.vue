@@ -9,7 +9,7 @@
             class="logo"
             src="/image/logo.png"
             lazy="loading"
-            :placeholder="15"
+            placeholder
             alt="Kompanijos logotipas"
           />
           <h4 class="header-title">Elitstroy</h4>
@@ -24,9 +24,9 @@
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav style-two m-auto">
             <li v-for="(item, index) in menu" :key="'level-1-' + index" class="nav-item">
-              <a v-if="item.href" :href="item.href" class="nav-link" exact-active-class="active">
+              <nuxt-link v-if="item.href" :to="item.href" class="nav-link" exact-active-class="active">
                 {{ item.title }}
-              </a>
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -52,9 +52,6 @@ export default {
   methods: {
     OpenMobileMenu() {
       OpenMobileMenu()
-    },
-    pushRouter(link) {
-      this.$router.push(link)
     },
   },
 }

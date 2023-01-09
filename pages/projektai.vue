@@ -2,7 +2,7 @@
   <div>
     <page-banner
       class="bg-1"
-      page-name="Atlikti darbai"
+      :page-name="projectsSection.pageTitle"
       :links="[
         { name: 'Pagrindinis', url: '/' },
         { name: 'Projektai', url: '/projektai' },
@@ -22,7 +22,10 @@ export default {
   computed: {
     seoData() {
       return this.$store.state.seoData[0]
-    }
+    },
+    projectsSection() {
+      return this.$store.state.projektaiData[0]
+    },
   },
   head() {
     return {

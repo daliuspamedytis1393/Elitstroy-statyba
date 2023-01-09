@@ -1,13 +1,11 @@
 <template>
   <div class="main-projects-item">
-    <nuxt-link :to="link" class="projects-img">
-      <img :src="image" alt="Projektas ir jo informacija" />
-    </nuxt-link>
+    <nuxt-img :src="image" placeholder format="webp" class="projects-img" alt="Projektas ir jo informacija" />
 
     <div class="project-content hover-style">
       <div class="inner-border">
         <h3>
-          <nuxt-link :to="link">{{ title }}</nuxt-link>
+          {{ title }}
         </h3>
         <p>
           {{ description }}
@@ -30,10 +28,6 @@ export default {
       required: true,
     },
     description: {
-      type: String,
-      required: true,
-    },
-    link: {
       type: String,
       required: true,
     },

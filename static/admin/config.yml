@@ -110,35 +110,33 @@ collections:
           - { label: Kontaktai puslapio meta apibūdinimas, name: contactsMetaDescription, widget: string, hint: 'Kontaktai puslapio meta apibūdinimas' }
           - { label: Projektai puslapio meta pavadinimas, name: projectsMetaTitle, widget: string, hint: 'Projektai puslapio meta pavadinimas' }
           - { label: Projektai puslapio meta apibūdinimas, name: projectsMetaDescription, widget: string, hint: 'Projektai puslapio meta apibūdinimas' }
-  - name: 'projektai'
-    # identifier_field: name
-    label: 'projektai'
-    label_singular: 'Project'
-    folder: 'assets/content/projektai'
-    create: true
-    format: 'json'
-    slug: '{{project_type}}-{{slug}}'
-    preview_path: 'projektai/{{slug}}'
-    fields:
-      - {
-          label: 'Project Type',
-          name: 'project_type',
-          widget: 'select',
-          default: 'story',
-          options: [{ label: 'Story', value: 'story' }, { label: 'Photo', value: 'photo' }],
-        }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'Content', name: 'body', widget: 'markdown', required: false }
-      - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
-      - {
-          label: 'Gallery',
-          name: 'gallery',
-          widget: 'list',
-          required: false,
-          summary: '{{fields.image}}',
-          field: { label: 'Image', name: 'image', widget: 'image' },
-        }
+  - label: 'projektai'
+    name: 'projektai'
+    files:
+      - label: 'Atsiliepimų sekcijos informacija'
+        name: 'info'
+        file: 'assets/content/projektai/projektai.json'
+        format: 'json'
+        editor:
+          preview: false
+        fields:
+          - { label: PageTitle, name: pageTitle, widget: string }
+          - { label: Title, name: 'title', widget: string }
+          - label: 'Projektas'
+            name: projects
+            widget: list
+            fields:
+              - { label: Projekto rūšis, name: name, widget: string }
+              - { label: Projekto mini aprašymas, name: description, widget: string }
+              - {
+                  label: Paveiksliukas,
+                  name: photo,
+                  widget: image,
+                  required: false,
+                  allow_multiple: true,
+                  choose_url: true,
+                  default: '/static/logo.png',
+                }
   # - name: 'story_projects'
   #   # identifier_field: name
   #   label: 'Story Projects'

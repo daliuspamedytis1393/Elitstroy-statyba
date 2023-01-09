@@ -46,7 +46,7 @@ export default {
           href: '/projektai',
         },
         {
-          href: '/kontaktai',
+          href: '/kontaktai/',
           title: 'Kontaktai',
         },
       ],

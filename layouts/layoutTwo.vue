@@ -50,7 +50,7 @@ export default {
 
         {
           title: 'Kontaktai',
-          href: '/kontaktai',
+          href: '/kontaktai/',
         },
       ],
     }

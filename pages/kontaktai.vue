@@ -18,7 +18,6 @@
                   name="contacts"
                   method="POST"
                   action="/sekmingai-issiusta"
-                  data-netlify-recaptcha="true"
                   data-netlify="true"
                   id="contact-form"
                 >
@@ -50,7 +49,6 @@
                           class="form-control"
                           placeholder="Jūsų žinutė"
                         ></textarea>
-                        <div class="captcha" data-netlify-recaptcha="true"></div>
                       </div>
                     </div>
                     <div class="col-12">
@@ -119,9 +117,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.captcha {
-  margin-top: 30px;
-}
-</style>

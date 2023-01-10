@@ -4,14 +4,15 @@
       <div class="row d-flex justify-content-between">
         <div v-for="(work, index) in darbaiData.works" :key="index" class="col-lg-3 col-sm-6">
           <div data-aos="fade-up" data-aos-delay="200" class="main-features-item">
-            <i class="main-icon" :class="work.icon"></i>
-            <i class="shape-icon" :class="work.icon"></i>
+            <i class="main-icon" :class="work.iconName"></i>
+            <i class="shape-icon" :class="work.iconName"></i>
             <h3>{{ work.name }}</h3>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 </template>
 
 <script>

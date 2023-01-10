@@ -69,6 +69,16 @@
       "name": "Apželdinimo darbai",
       "description": "Norėdami turėti jaukų kiemą, kuriame galėtume pasigrožėti reikalingos profesonalios rankos.",
       "iconName": "icofont-cauli-flower"
+    },
+    {
+      "name": "Trinkelių klojimas",
+      "description": "Teikdami visus trinkelių klojimo paslaugas, mes garantuojame kokybiškai atliktus darbus.",
+      "iconName": "icofont-bricks"
+    },
+    {
+      "name": "Tvoros įrengimas",
+      "iconName": "icofont-book-mark",
+      "description": "Prieš montuodami tvorą, pasirinkite jos modelį. mes siūlome statybos blokelius, skirtus tvorų konstrukcijoms. Be to siūlome tvorų blokelių montavimo paslaugas, įskaitant ir darbų kainos susitarimą."
     }
   ],
   "pageTitle": "Paslaugos",

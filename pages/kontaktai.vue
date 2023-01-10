@@ -5,7 +5,6 @@
       :page-name="websiteData.title"
       :links="[{ name: 'Pagrindinis', url: '/' }, { name: websiteData.title }]"
     />
-    <client-only>
       <div class="contact-section ptb-100">
         <div class="container">
           <div class="contact-wrap">
@@ -79,7 +78,6 @@
           </div>
         </div>
       </div>
-    </client-only>
   </div>
 </template>
 

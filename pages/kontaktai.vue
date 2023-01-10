@@ -26,13 +26,13 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label for="name">Jūsų vardas</label>
+                        <label for="name"></label>
                         <input type="text" name="name" required class="form-control" placeholder="Vardas">
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label for="email">Jūsų el. paštas</label>
+                        <label for="email"></label>
                         <input
                           type="email"
                           name="email"
@@ -44,7 +44,7 @@
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label for="body"> Jūsų žinutė </label>
+                        <label for="body"></label>
                         <textarea
                           cols="30"
                           rows="10"
@@ -125,6 +125,6 @@ export default {
 
 <style lang="scss" scoped>
 .captcha {
-  margin-top: 40px;
+  margin-bottom: 27px;
 }
 </style>

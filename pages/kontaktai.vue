@@ -20,7 +20,7 @@
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                   >
-             
+                    <input type="hidden" name="contacts-form" value="contacts">
 
                     <div class="row">
                       <div class="col-lg-12">

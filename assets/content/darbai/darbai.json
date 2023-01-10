@@ -39,6 +39,11 @@
       "name": "Santechnikos įrengimas",
       "description": "Santechniko įrengimas - atidumo reikalaujantis procesas. Mūsų santechnikai gali pasiūlyti visus būsto įrengimui reikiamus darbus!",
       "iconName": "icofont-brand-wire"
+    },
+    {
+      "name": "Rekuperacijos vėdinimo įrengimas",
+      "description": "Vėdinimas mechaninio įrenginio pagalba, kuris iš pastato išleidžiamo oro šilumos energijos dalį grąžina atgal.",
+      "iconName": "icofont-spinner-alt-4"
     }
   ],
   "pageTitle": "Paslaugos",

@@ -491,7 +491,7 @@ section:not(.footer-section) {
   padding: 50px;
   h2 {
     font-size: 45px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-top: -10px;
   }
   @media only screen and (max-width: 991px) {
@@ -505,7 +505,7 @@ section:not(.footer-section) {
 }
 .form-contact {
   .form-group {
-    margin-bottom: 30px;
+
     .form-control {
       border-color: #dddddd;
       background-color: $white-color;

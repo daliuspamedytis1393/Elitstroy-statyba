@@ -151,7 +151,6 @@ export default {
 
 .form-solution {
 	.form-group {
-		margin-bottom: 30px;
 
 		.form-control {
 			border-color: #dddddd;

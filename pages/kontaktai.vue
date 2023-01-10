@@ -125,6 +125,6 @@ export default {
 
 <style lang="scss" scoped>
 .captcha {
-  margin-bottom: 27px;
+  margin: 30px 0;
 }
 </style>

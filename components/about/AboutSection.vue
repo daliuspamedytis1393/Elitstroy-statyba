@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row flex-direction-column-reverse align-items-center">
         <div class="col-lg-6">
-          <div class="about-us-img me-15" data-aos="fade-right" data-aos-delay="400">
+          <div class="about-us-img me-15" data-aos="fade-right" data-aos-delay="200">
             <nuxt-img
               loading="lazy"
               src="/image/apie-mus/apie-mus.jpeg"
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="about-content ms-15" data-aos="fade-left" data-aos-delay="400">
+          <div class="about-content ms-15" data-aos="fade-left" data-aos-delay="200">
             <h1>{{ websiteData.title }}</h1>
             <p>
               {{ websiteData.description }}

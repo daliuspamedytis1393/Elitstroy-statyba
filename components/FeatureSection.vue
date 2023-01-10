@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     calculateDelay(index){
-      return 200 + (100 * (index + 1))
+      return 100 + (50 * (index + 1))
     }
   }
 }

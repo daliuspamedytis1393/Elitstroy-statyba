@@ -24,11 +24,11 @@
     >
       <div class="row">
         <div class="col-lg-6">
-          <div class="form-group"><input name="name" required placeholder="Vardas" class="form-control" /></div>
+          <div class="form-group"><input name="name" required placeholder="Vardas" class="form-control"></div>
         </div>
         <div class="col-lg-6">
           <div class="form-group">
-            <input type="email" name="email" required placeholder="Elektroninis paštas" class="form-control" />
+            <input type="email" name="email" required placeholder="Elektroninis paštas" class="form-control">
           </div>
         </div>
         <div class="col-lg-12">

@@ -24,9 +24,10 @@
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav style-two m-auto">
             <li v-for="(item, index) in menu" :key="'level-1-' + index" class="nav-item">
-              <nuxt-link v-if="item.href" :to="item.href" class="nav-link" exact-active-class="active">
+              <nuxt-link v-if="item.to" :to="item.to" class="nav-link" exact-active-class="active">
                 {{ item.title }}
               </nuxt-link>
+              <a v-else :href="item.href" class="nav-link" exact-active-class="active"> {{ item.title }}</a>
             </li>
           </ul>
         </div>

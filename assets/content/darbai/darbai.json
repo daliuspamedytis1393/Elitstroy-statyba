@@ -19,6 +19,16 @@
       "name": "Monolitinių ir surenkamų gelžbetonio konstrukcijų įrengimas",
       "description": "Siūlomos gelžbetonio konstrukcijos – ypač tvirtos, atlaiko didelę apkrovą.",
       "iconName": "icofont-console"
+    },
+    {
+      "name": "Langų montavimas",
+      "description": "Gerai sumontuotos langinės ne tik leidžia natūraliai vėdinti ir apšviesti pastatą, bet ir apsaugo jį nuo lietaus, vėjo ir šalčio.",
+      "iconName": "icofont-brand-windows"
+    },
+    {
+      "name": "Fasado apšiltinimas ir apdailos darbai",
+      "description": "Fasado apdaila, fasado šiltinimas - visi fasado darbai už teisingą kainą.",
+      "iconName": "icofont-wall"
     }
   ],
   "pageTitle": "Paslaugos",

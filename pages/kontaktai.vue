@@ -19,6 +19,7 @@
                   action="/sekmingai-issiusta/"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
+                  data-netlify-recaptcha="true"
                 >
                   <input type="hidden" name="form-name" value="contacts">
 
@@ -54,6 +55,7 @@
                         ></textarea>
                       </div>
                     </div>
+                    <div class="captcha" data-netlify-recaptcha="true"></div>
                     <div class="col-12">
                       <button type="submit" class="main-btn">
                         <span>Siųsti</span>
@@ -120,3 +122,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.captcha {
+  margin-top: 40px;
+}
+</style>

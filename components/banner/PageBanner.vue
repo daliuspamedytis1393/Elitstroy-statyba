@@ -4,11 +4,11 @@
       <div class="page-banner-content">
         <h2>{{ pageName }}</h2>
         <ul>
-          <template v-for="(item, index) in links">
+          <template v-for="(item, index) in links" :key="index">
             <li v-if="index + 1 === links.length" :key="index">
               {{ item.name }}
             </li>
-            <li v-else :key="index">
+            <li v-else :key="`${item.name}${index}`">
               <nuxt-link :to="item.url">{{ item.name }}</nuxt-link>
             </li>
           </template>

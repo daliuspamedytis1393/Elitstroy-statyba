@@ -2,8 +2,8 @@
   <section class="services-section ptb-100">
     <div class="container">
       <div class="main-section-title white-title" data-aos="fade-up" data-aos-delay="200">
-        <span class="up-title">Paslaugos</span>
-        <h2 class="text-black">Mūsų teikiamos paslaugos</h2>
+        <span class="up-title">{{ darbaiData.pageTitle}}</span>
+        <h2 class="text-black">{{ darbaiData.title }}</h2>
       </div>
       <client-only>
         <owl-carousel
@@ -18,10 +18,10 @@
           :center="true"
         >
           <service-item
-            v-for="(service, index) in serviceItem"
+            v-for="(service, index) in darbaiData.works"
             :key="index"
-            :icon="service.icon"
-            :title="service.title"
+            :icon="service.iconName"
+            :title="service.name"
             :description="service.description"
           />
         </owl-carousel>
@@ -43,7 +43,7 @@ export default {
         loop: true,
         margin: 30,
         nav: false,
-        smartSpeed: 800,
+        smartSpeed: 500,
         autoplayHoverPause: true,
         center: true,
         responsive: {
@@ -67,42 +67,12 @@ export default {
           },
         },
       },
-      serviceItem: [
-        {
-          icon: 'icofont-building-alt',
-          title: 'Statybos darbai',
-          description: 'Atliekame kapitalinį būsto remontą bei įrengiame naujos statybos butus, namus ir kotedžus.',
-        },
-        {
-          icon: 'icofont-industries',
-          title: 'Industries Pollution',
-          description:
-            'Louasi architecto beatae vitae dicta su voluptatem quia the voluptas so sequuntur magni dolores.',
-        },
-        {
-          icon: 'icofont-under-construction-alt',
-          title: 'Under-Construction',
-          description:
-            'Louasi architecto beatae vitae dicta su voluptatem quia the voluptas so sequuntur magni dolores.',
-        },
-        {
-          icon: 'icofont-calculations',
-          title: 'Projektavimas',
-          description:
-            'Louasi architecto beatae vitae dicta su voluptatem quia the voluptas so sequuntur magni dolores.',
-        },
-        {
-          icon: 'icofont-industries',
-          title: 'Rekonstrukcija',
-          description: 'Atliekame tam tikru pakeitimus esamoje statyboje',
-        },
-        {
-          icon: 'icofont-under-construction-alt',
-          title: 'Betonavimo darbai',
-          description: 'Betonuojame: Individualius namus Daugiabučius Mažus plotus Gamybines patalpas ir kt.',
-        },
-      ],
     }
+  },
+  computed: {
+    darbaiData() {
+      return this.$store.state.darbaiData[0]
+    },
   },
 }
 </script>

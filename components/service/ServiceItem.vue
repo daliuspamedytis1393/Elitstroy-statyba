@@ -45,6 +45,9 @@ export default {
   z-index: 1;
   overflow: hidden;
   margin-bottom: 30px;
+  @media only screen and (min-width: 1000px) {
+    height: 428px;
+  }
   @media only screen and (max-width: 1199px) {
     padding: 20px;
   }

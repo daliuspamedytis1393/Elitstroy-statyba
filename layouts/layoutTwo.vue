@@ -37,20 +37,21 @@ export default {
       menu: [
         {
           title: 'Pagrindinis',
-          to: '/',
+          href: '/',
         },
         {
           title: 'Apie mus',
-          to: '/apie-mus/',
+          href: '/apie-mus/',
         },
         {
           title: 'Projektai',
-          to: '/projektai/',
+          href: '/projektai/',
         },
 
         {
           title: 'Kontaktai',
           href: '/kontaktai/',
+          contacts: true
         },
       ],
     }

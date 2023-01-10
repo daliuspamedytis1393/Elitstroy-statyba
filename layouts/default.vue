@@ -35,19 +35,20 @@ export default {
       menu: [
         {
           title: 'Pagrindinis',
-          to: '/',
+          href: '/',
         },
         {
           title: 'Apie mus',
-          to: '/apie-mus/',
+          href: '/apie-mus/',
         },
         {
           title: 'Projektai',
-          to: '/projektai/',
+          href: '/projektai',
         },
         {
-          href: '/kontaktai/',
           title: 'Kontaktai',
+          href: '/kontaktai/',
+          contacts: true
         },
       ],
     }

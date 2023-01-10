@@ -27,7 +27,7 @@
               <nuxt-link v-if="item.to" :to="item.to" class="nav-link" exact-active-class="active">
                 {{ item.title }}
               </nuxt-link>
-              <a v-else :href="item.href" class="nav-link" exact-active-class="active"> {{ item.title }}</a>
+              <a v-else :href="item.href" class="nav-link" :class="{active: $route.path === item.href}"> {{ item.title }}</a>
             </li>
           </ul>
         </div>

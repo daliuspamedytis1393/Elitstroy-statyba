@@ -44,6 +44,31 @@
       "name": "Rekuperacijos vėdinimo įrengimas",
       "description": "Vėdinimas mechaninio įrenginio pagalba, kuris iš pastato išleidžiamo oro šilumos energijos dalį grąžina atgal.",
       "iconName": "icofont-spinner-alt-4"
+    },
+    {
+      "name": "Grindų betonavimas",
+      "iconName": "icofont-brand-american-airlines",
+      "description": " Betoninės grindys yra geriausias ir bene pigiausias būdas įrengti lygias ir patikimas grindis."
+    },
+    {
+      "name": "Sienų tinkavimas",
+      "iconName": "icofont-line-block-down",
+      "description": "Siekiant išvengti problemų ateityje, ne tik savininko, bet ir specialistų rūpestis yra teisingai nutinkuoti namo išorės sienas, kurios yra atviroje erdvėje ir veikiamos skirtingų klimato sąlygų. "
+    },
+    {
+      "name": "Lauko inžinierinių tinklų įrengimas",
+      "iconName": "icofont-connection",
+      "description": "Lauko vandentiekio sistemos įrengimas apima daugybę dalių, tarp jų požeminius kanalus, hidrantus, požemines jungtis, pralaidas, spaudimo trasos klojimą, taip pat ir kelių montavimo būdų - prakalimo, prastūmimo ir gręžimo."
+    },
+    {
+      "name": "Terasos įrengimas",
+      "description": "icofont-street-view",
+      "iconName": "Terasai turi būti įrengti naudojant impregnuotą masyvo medieną, kadangi ji yra nuolat veikiama drėgmės ir išdžiūti turi neoptimalias sąlygas. Giluminis impregnavimas yra vienas iš efektyviausių būdų apsaugoti medieną."
+    },
+    {
+      "name": "Apželdinimo darbai",
+      "description": "Norėdami turėti jaukų kiemą, kuriame galėtume pasigrožėti reikalingos profesonalios rankos.",
+      "iconName": "icofont-cauli-flower"
     }
   ],
   "pageTitle": "Paslaugos",

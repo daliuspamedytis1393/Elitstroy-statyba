@@ -24,7 +24,7 @@
           </div>
 
           <div class="col-lg-6 col-sm-6">
-            <div class="main-footer-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="main-footer-item" data-aos="fade-up" data-aos-delay="200">
               <h3>Kontaktai</h3>
 
               <ul class="contact-info">

@@ -1,3 +1,16 @@
 {
-    
+  "works": [
+    {
+      "name": "Visų tipų stogų įrengimas ir šiltinimas",
+      "iconName": "icofont-hammer-alt",
+      "description": "Stogo įrengimas yra svarbi namo dalis, mes garantuojame tvirtą ir ilgaamžį namo stogą su šilumos ir triukšmo izoliacija."
+    },
+    {
+      "name": "Gręžtinių pamatų įrengimas",
+      "iconName": "icofont-bricks",
+      "description": "Gręžtiniai pamatai tinka, kai namo projekte nėra numatytas rūsys. Jų įrengimas yra paprastesnis ir pigesnis "
+    }
+  ],
+  "pageTitle": "Paslaugos",
+  "title": "Mūsų teikiamos paslaugos"
 }

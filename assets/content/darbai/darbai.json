@@ -29,6 +29,16 @@
       "name": "Fasado apšiltinimas ir apdailos darbai",
       "description": "Fasado apdaila, fasado šiltinimas - visi fasado darbai už teisingą kainą.",
       "iconName": "icofont-wall"
+    },
+    {
+      "name": "Elektros įrengimas",
+      "description": "Atliekame laidų išvedžioją elektros lizdams, jungikliams, šviestuvams, lauko apšvietimas ir t.t",
+      "iconName": "icofont-thunder-light"
+    },
+    {
+      "name": "Santechnikos įrengimas",
+      "description": "Santechniko įrengimas - atidumo reikalaujantis procesas. Mūsų santechnikai gali pasiūlyti visus būsto įrengimui reikiamus darbus!",
+      "iconName": "icofont-brand-wire"
     }
   ],
   "pageTitle": "Paslaugos",

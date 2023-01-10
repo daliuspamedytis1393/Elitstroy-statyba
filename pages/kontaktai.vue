@@ -21,12 +21,12 @@
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                   >
-                    <input type="hidden" name="contacts" value="contacts" />
+                    <input type="hidden" name="contacts" value="contacts">
 
                     <div class="row">
                       <div class="col-lg-6">
                         <div class="form-group">
-                          <input type="text" name="name" required class="form-control" placeholder="Vardas" />
+                          <input type="text" name="name" required class="form-control" placeholder="Vardas">
                         </div>
                       </div>
                       <div class="col-lg-6">
@@ -37,7 +37,7 @@
                             required
                             class="form-control"
                             placeholder="Elektroninis paštas"
-                          />
+                          >
                         </div>
                       </div>
                       <div class="col-lg-12">

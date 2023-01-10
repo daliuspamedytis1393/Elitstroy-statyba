@@ -14,6 +14,11 @@
       "name": "Laikančiųjų ir pertvarinių mūro sienų įrengimas",
       "description": "Laikančiosios sienos perima apkrovas nuo kitų statinio konstrukcijų ir užtikrina statinio mechaninį atsparumą ir pastovumą.",
       "iconName": "icofont-wall"
+    },
+    {
+      "name": "Monolitinių ir surenkamų gelžbetonio konstrukcijų įrengimas",
+      "description": "Siūlomos gelžbetonio konstrukcijos – ypač tvirtos, atlaiko didelę apkrovą.",
+      "iconName": "icofont-console"
     }
   ],
   "pageTitle": "Paslaugos",

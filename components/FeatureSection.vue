@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row d-flex justify-content-between">
         <div v-for="(work, index) in darbaiData.works" :key="index" class="col-lg-3 col-sm-6">
-          <div data-aos="fade-up" data-aos-delay="200" class="main-features-item">
+          <div data-aos="fade-up" :data-aos-delay="200 * (index + 1)" class="main-features-item">
             <i class="main-icon" :class="work.iconName"></i>
             <i class="shape-icon" :class="work.iconName"></i>
             <h3>{{ work.name }}</h3>
@@ -37,6 +37,7 @@ export default {
   z-index: 1;
   transition: $transition;
   margin-bottom: 30px;
+  height: 250px;
   @media only screen and (max-width: 991px) {
     padding: 30px;
   }

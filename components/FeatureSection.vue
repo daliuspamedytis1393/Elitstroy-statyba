@@ -75,10 +75,10 @@ export default {
     }
   }
   h3 {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 0;
     @media only screen and (max-width: 1199px) {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
   .shape-icon {

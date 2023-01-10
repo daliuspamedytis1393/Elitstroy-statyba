@@ -83,4 +83,10 @@ export default {
   router: {
     trailingSlash: true,
   },
+
+  generate: {
+    minify: {
+      collapseWhitespace: false
+    }
+  }
 }

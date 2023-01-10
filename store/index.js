@@ -5,6 +5,7 @@ import {
 	SET_PAGRINDINIS_DATA,
 	SET_KONTAKTAI_DATA,
 	SET_SEO_DATA,
+	SET_DARBAI_DATA,
 } from './mutations.type'
 
 export const state = () => ({
@@ -13,6 +14,7 @@ export const state = () => ({
 	atsiliepimaiData: [],
 	pagrindinisData: [],
 	kontaktaiData: [],
+	darbaiData: [],
 	seoData: []
 })
 
@@ -31,6 +33,9 @@ export const mutations = {
 	},
 	[SET_KONTAKTAI_DATA](state, list) {
 		state.kontaktaiData = list
+	},
+	[SET_DARBAI_DATA](state, list) {
+		state.darbaiData = list
 	},
 	[SET_SEO_DATA](state, list) {
 		state.seoData = list
@@ -87,5 +92,12 @@ export const actions = {
 			/\.json$/
 		)
 		await commit(SET_SEO_DATA, actions.getPosts(seoFiles))
+
+		const darbaiFiles = await require.context(
+			'~/assets/content/darbai/',
+			false,
+			/\.json$/
+		)
+		await commit(SET_DARBAI_DATA, actions.getPosts(darbaiFiles))
 	},
 }

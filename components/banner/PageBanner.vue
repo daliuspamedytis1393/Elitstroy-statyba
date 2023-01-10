@@ -4,7 +4,7 @@
       <div class="page-banner-content">
         <h2>{{ pageName }}</h2>
         <ul>
-          <template v-for="(item, index) in links" :key="index">
+          <template v-for="(item, index) in links" >
             <li v-if="index + 1 === links.length" :key="index">
               {{ item.name }}
             </li>

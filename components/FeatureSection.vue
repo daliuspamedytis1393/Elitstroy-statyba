@@ -2,35 +2,11 @@
   <section class="features-section pb-70">
     <div class="container">
       <div class="row d-flex justify-content-between">
-        <div class="col-lg-3 col-sm-6">
+        <div v-for="(work, index) in darbaiData.works" :key="index" class="col-lg-3 col-sm-6">
           <div data-aos="fade-up" data-aos-delay="200" class="main-features-item">
-            <i class="main-icon icofont-building-alt"></i>
-            <i class="shape-icon icofont-building-alt"></i>
-            <h3>Statybos darbai</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6">
-          <div data-aos="fade-up" data-aos-delay="400" class="main-features-item">
-            <i class="main-icon icofont-calculations"></i>
-            <i class="shape-icon icofont-calculations"></i>
-            <h3>Projektavimas</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6">
-          <div data-aos="fade-up" data-aos-delay="600" class="main-features-item">
-            <i class="main-icon icofont-industries"></i>
-            <i class="shape-icon icofont-industries"></i>
-            <h3>Rekonstrukcija</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6">
-          <div data-aos="fade-up" data-aos-delay="800" class="main-features-item">
-            <i class="main-icon icofont-under-construction-alt"></i>
-            <i class="shape-icon icofont-under-construction-alt"></i>
-            <h3>Betonavimo darbai</h3>
+            <i class="main-icon" :class="work.icon"></i>
+            <i class="shape-icon" :class="work.icon"></i>
+            <h3>{{ work.name }}</h3>
           </div>
         </div>
       </div>
@@ -41,6 +17,11 @@
 <script>
 export default {
   name: 'FeatureSection',
+  computed: {
+    darbaiData() {
+      return this.$store.state.darbaiData[0]
+    },
+  },
 }
 </script>
 

@@ -120,8 +120,8 @@ collections:
         editor:
           preview: false
         fields:
-          - { label: PageTitle, name: pageTitle, widget: string }
-          - { label: Title, name: 'title', widget: string }
+          - { label: Puslapio pavadinimas, name: pageTitle, widget: string }
+          - { label: Antraštė, name: 'title', widget: string }
           - label: 'Projektas'
             name: projects
             widget: list
@@ -137,6 +137,25 @@ collections:
                   choose_url: true,
                   default: '/static/logo.png',
                 }
+  - label: 'darbai'
+    name: 'darbai'
+    files:
+      - label: 'Darbų sekcijos informacija'
+        name: 'info'
+        file: 'assets/content/darbai/darbai.json'
+        format: 'json'
+        editor:
+          preview: false
+        fields:
+          - { label: Puslapio pavadinimas, name: pageTitle, widget: string }
+          - { label: Antraštė, name: 'title', widget: string }
+          - label: 'Darbai'
+            name: works
+            widget: list
+            fields:
+              - { label: Darbo rūšis, name: name, widget: string }
+              - { label: Darbo aprašymas, name: description, widget: string }
+              - { label: ikonos pavadinimas, name: iconName, widget: string }
   # - name: 'story_projects'
   #   # identifier_field: name
   #   label: 'Story Projects'

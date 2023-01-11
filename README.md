@@ -1,6 +1,4 @@
-# Bonax - Construction & Business Vue Nuxt Js Template
-
-Bonax is a simple Construction & Business Vue Nuxt Js Template. This theme has 3 homepage layouts and responsive, easy to customize. You can using this Template for Construction, Business etc
+# Elistroy statybos
 
 ## Build Setup
 

@@ -25,4 +25,3 @@ export default {
 	layout: 'layoutTwo',
 }
 </script>
-<style scoped lang="scss"></style>

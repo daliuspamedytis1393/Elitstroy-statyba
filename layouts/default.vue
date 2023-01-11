@@ -28,7 +28,13 @@ import aosMixin from '~/mixins/aos-mixin'
 import LazyHydrate from 'vue-lazy-hydration'
 
 export default {
-  components: { Header, FooterSection, MobileMenu, CallButton, LazyHydrate },
+  components: {
+    Header,
+    FooterSection,
+    MobileMenu,
+    CallButton,
+    LazyHydrate,
+  },
   mixins: [aosMixin],
   data() {
     return {
@@ -48,7 +54,7 @@ export default {
         {
           title: 'Kontaktai',
           href: '/kontaktai/',
-          contacts: true
+          contacts: true,
         },
       ],
     }

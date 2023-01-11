@@ -21,12 +21,14 @@
           <i class="icofont-close-line"></i>
         </div>
       </div>
-      <sidebar-menu :menu="menu" theme="white-theme" class="side-mobile-menu" @item-click="onItemClick">
-        <template v-slot:dropdown-icon="{ isOpen }">
-          <span v-if="!isOpen"><i class="icofont-plus"></i></span>
-          <span v-else><i class="icofont-minus"></i></span>
-        </template>
-      </sidebar-menu>
+      <client-only>
+        <sidebar-menu :menu="menu" theme="white-theme" class="side-mobile-menu" @item-click="onItemClick">
+          <template v-slot:dropdown-icon="{ isOpen }">
+            <span v-if="!isOpen"><i class="icofont-plus"></i></span>
+            <span v-else><i class="icofont-minus"></i></span>
+          </template>
+        </sidebar-menu>
+      </client-only>
     </aside>
     <div id="body_overlay" class="body-overlay" @click="CloseMobileMenu"></div>
   </div>

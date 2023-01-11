@@ -1,6 +1,7 @@
 <template>
   <section class="features-section pb-70">
     <div class="container">
+      <h2 class="text-black pb-70">{{ darbaiData.title }}</h2>
       <div class="row d-flex justify-content-between">
         <div v-for="(work, index) in darbaiData.works" :key="index" class="col-lg-3 col-sm-6">
           <div data-aos="fade-up" :data-aos-delay="calculateDelay(index)" class="main-features-item">

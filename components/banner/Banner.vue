@@ -10,12 +10,12 @@
           <li></li>
         </ul>
 
-        <a href="/kontaktai" class="main-btn" data-aos="fade-up" data-aos-delay="600">
+        <nuxt-link to="/kontaktai/" class="main-btn" data-aos="fade-up" data-aos-delay="600">
           <span>
             {{ websiteData.buttonName }}
             <i class="icofont-arrow-right"></i>
           </span>
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </section>

@@ -47,22 +47,18 @@ export const OpenMobileMenu = function(){
 	const mobileMenu = document.getElementById('menu_slide_bar');
 	const mobileMenuBtn = document.getElementById('mobile_menu');
 	const bodyOverlay = document.getElementById('body_overlay');
-	const body = document.getElementsByTagName('body');
 
 	mobileMenu.classList.add("show")
 	mobileMenuBtn.classList.add("open")
 	bodyOverlay.classList.add("active")
-	body[0].classList.add("on-side")
 }
 
 export const CloseMobileMenu = function() {
 	const mobileMenu = document.getElementById('menu_slide_bar')
 	const mobileMenuBtn = document.getElementById('mobile_menu')
 	const bodyOverlay = document.getElementById('body_overlay')
-	const body = document.getElementsByTagName('body')
 
 	mobileMenu.classList.remove('show')
 	mobileMenuBtn.classList.remove('open')
 	bodyOverlay.classList.remove('active')
-	body[0].classList.remove('on-side')
 }

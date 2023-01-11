@@ -5,7 +5,7 @@
       :page-name="projectsSection.pageTitle"
       :links="[
         { name: 'Pagrindinis', url: '/' },
-        { name: 'Projektai', url: '/projektai' },
+        { name: 'Projektai', url: '/projektai/' },
       ]"
     />
 

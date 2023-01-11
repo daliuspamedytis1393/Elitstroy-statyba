@@ -5,7 +5,7 @@
       :page-name="websiteData.title"
       :links="[
         { name: 'Pagrindinis', url: '/' },
-        { name: 'Apie mus', url: '/apie-mus' },
+        { name: 'Apie mus', url: '/apie-mus/' },
       ]"
     />
 

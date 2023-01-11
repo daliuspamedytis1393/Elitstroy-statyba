@@ -49,7 +49,7 @@ export default {
         },
         {
           title: 'Projektai',
-          href: '/projektai',
+          href: '/projektai/',
         },
         {
           title: 'Kontaktai',

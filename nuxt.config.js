@@ -82,7 +82,6 @@ export default {
   // configuration for server to serve form subfolder
   router: {
     trailingSlash: true,
-    middleware: ['adjustScroll']
   },
 
   generate: {

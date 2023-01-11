@@ -48,7 +48,6 @@ export default {
 
   &__wrapper {
     margin: 0 auto;
-
   }
 }
 </style>

@@ -51,7 +51,7 @@ export default {
         {
           title: 'Kontaktai',
           href: '/kontaktai/',
-          contacts: true
+          contacts: true,
         },
       ],
     }

@@ -1,6 +1,13 @@
 <template>
   <div class="main-projects-item">
-    <nuxt-img loading="lazy" :src="image" :placeholder="15" format="webp" class="projects-img" alt="Projektas ir jo informacija" />
+    <nuxt-img
+      loading="lazy"
+      :src="image"
+      :placeholder="15"
+      format="webp"
+      class="projects-img"
+      alt="Projektas ir jo informacija"
+    />
 
     <div class="project-content hover-style">
       <div class="inner-border">

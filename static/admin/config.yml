@@ -1,5 +1,5 @@
-site_url: https://statyba.netlify.app/
-logo_url: https://statyba.netlify.app/logo.png
+site_url: https://elitstroy.lt/
+logo_url: https://elitstroy.lt/logo.png
 
 publish_mode: editorial_workflow
 backend:
@@ -11,7 +11,7 @@ public_folder: /image
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
-  - label: 'pagrindinis'
+  - label: 'Pagrindinis puslapis'
     name: 'pagrindinis'
     files:
       - label: 'Pagrindinio puslapio informacija'
@@ -29,8 +29,8 @@ collections:
           - { label: Adresas, name: address, widget: string, hint: 'Įmonės adresas' }
           - { label: Įmonės numeris, name: companyNumber, widget: string, hint: 'Įmonės registruotas numeris' }
           - { label: PVM kodas, name: pvm, widget: string, hint: 'PVM mokėtojo kodas' }
-          - { label: metai, name: year, widget: string, hint: 'Autorių teisių metai (kiekvienais metais pakeiskite)' }
-  - label: 'apie-mus'
+          - { label: Metai, name: year, widget: string, hint: 'Autorių teisių metai (kiekvienais metais pakeiskite)' }
+  - label: 'Apie mus puslapis'
     name: 'apie-mus'
     files:
       - label: 'Apie mus puslapio informacija'
@@ -51,7 +51,7 @@ collections:
               hint: 'Ką siųlote',
               field: { label: 'Siūlymas', name: 'title', widget: 'string' },
             }
-  - label: 'kontaktai'
+  - label: 'Kontaktai puslapis'
     name: 'kontaktai'
     files:
       - label: 'Kontaktai puslapio informacija'
@@ -64,7 +64,7 @@ collections:
           - { label: Puslapio antraštė, name: title, widget: string, hint: 'Kontaktai puslapio pavadinimas' }
           - { label: Kontaktai pavadinimas, name: contactTitle, widget: string, hint: 'Sekcijos pavadinimas' }
           - { label: Google žemėlapio nuoroda, name: googleMaps, widget: string, hint: 'Google žemėlapio nuoroda' }
-  - label: 'atsiliepimai'
+  - label: 'Atsiliepimai sekcija'
     name: 'atsiliepimai'
     files:
       - label: 'Atsiliepimų sekcijos informacija'
@@ -92,7 +92,7 @@ collections:
                   choose_url: true,
                   default: '/static/logo.png',
                 }
-  - label: 'seo'
+  - label: 'Puslapių seo'
     name: 'seo'
     files:
       - label: 'Puslapių seo'
@@ -102,15 +102,55 @@ collections:
         editor:
           preview: false
         fields:
-          - { label: Pagrindinio puslapio meta pavadinimas, name: homepageMetaTitle, widget: string, hint: 'Pagrindinio puslapio meta pavadinimas' }
-          - { label: Pagrindinio puslapio meta apibūdinimas, name: homepageMetaDescription, widget: string, hint: 'Pagrindinio puslapio meta apibūdinimas' }
-          - { label: Apie mus puslapio meta pavadinimas, name: aboutUsMetaTitle, widget: string, hint: 'Apie mus puslapio meta pavadinimas' }
-          - { label: Apie mus puslapio meta apibūdinimas, name: aboutUsMetaDescription, widget: string, hint: 'Apie mus puslapio meta apibūdinimas' }
-          - { label: Kontaktai puslapio meta pavadinimas, name: contactsMetaTitle, widget: string, hint: 'Kontaktai puslapio meta pavadinimas' }
-          - { label: Kontaktai puslapio meta apibūdinimas, name: contactsMetaDescription, widget: string, hint: 'Kontaktai puslapio meta apibūdinimas' }
-          - { label: Projektai puslapio meta pavadinimas, name: projectsMetaTitle, widget: string, hint: 'Projektai puslapio meta pavadinimas' }
-          - { label: Projektai puslapio meta apibūdinimas, name: projectsMetaDescription, widget: string, hint: 'Projektai puslapio meta apibūdinimas' }
-  - label: 'projektai'
+          - {
+              label: Pagrindinio puslapio meta pavadinimas,
+              name: homepageMetaTitle,
+              widget: string,
+              hint: 'Pagrindinio puslapio meta pavadinimas',
+            }
+          - {
+              label: Pagrindinio puslapio meta apibūdinimas,
+              name: homepageMetaDescription,
+              widget: string,
+              hint: 'Pagrindinio puslapio meta apibūdinimas',
+            }
+          - {
+              label: Apie mus puslapio meta pavadinimas,
+              name: aboutUsMetaTitle,
+              widget: string,
+              hint: 'Apie mus puslapio meta pavadinimas',
+            }
+          - {
+              label: Apie mus puslapio meta apibūdinimas,
+              name: aboutUsMetaDescription,
+              widget: string,
+              hint: 'Apie mus puslapio meta apibūdinimas',
+            }
+          - {
+              label: Kontaktai puslapio meta pavadinimas,
+              name: contactsMetaTitle,
+              widget: string,
+              hint: 'Kontaktai puslapio meta pavadinimas',
+            }
+          - {
+              label: Kontaktai puslapio meta apibūdinimas,
+              name: contactsMetaDescription,
+              widget: string,
+              hint: 'Kontaktai puslapio meta apibūdinimas',
+            }
+          - {
+              label: Projektai puslapio meta pavadinimas,
+              name: projectsMetaTitle,
+              widget: string,
+              hint: 'Projektai puslapio meta pavadinimas',
+            }
+          - {
+              label: Projektai puslapio meta apibūdinimas,
+              name: projectsMetaDescription,
+              widget: string,
+              hint: 'Projektai puslapio meta apibūdinimas',
+            }
+  - label: 'Projektai puslapis'
     name: 'projektai'
     files:
       - label: 'Atsiliepimų sekcijos informacija'
@@ -137,7 +177,7 @@ collections:
                   choose_url: true,
                   default: '/static/logo.png',
                 }
-  - label: 'darbai'
+  - label: 'Darbai, kuriuos siūlome sekcija'
     name: 'darbai'
     files:
       - label: 'Darbų sekcijos informacija'
@@ -156,53 +196,3 @@ collections:
               - { label: Darbo rūšis, name: name, widget: string }
               - { label: Darbo aprašymas, name: description, widget: string }
               - { label: ikonos pavadinimas, name: iconName, widget: string }
-  # - name: 'story_projects'
-  #   # identifier_field: name
-  #   label: 'Story Projects'
-  #   label_singular: 'Story Project'
-  #   folder: 'assets/content/stories'
-  #   create: true
-  #   format: 'json'
-  #   slug: '{{slug}}'
-  #   preview_path: 'stories/{{slug}}'
-  #   # filter: { field: 'project_type', value: 'story' }
-  #   fields:
-  #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['story', 'photo'] }
-  #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-  #     - { label: 'Title', name: 'title', widget: 'string' }
-  #     - { label: 'Description', name: 'description', widget: 'string', required: false }
-  #     - { label: 'Content', name: 'body', widget: 'markdown', required: false }
-  #     - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
-  #     - {
-  #         label: 'Gallery',
-  #         name: 'gallery',
-  #         widget: 'list',
-  #         required: false,
-  #         summary: '{{fields.image}}',
-  #         field: { label: 'Image', name: 'image', widget: 'image' },
-  #       }
-  # - name: 'photo_projects'
-  #   # identifier_field: name
-  #   label: 'Photo Projects'
-  #   label_singular: 'Photo Project'
-  #   folder: 'assets/content/photos'
-  #   create: true
-  #   format: 'json'
-  #   slug: '{{slug}}'
-  #   preview_path: 'photos/{{slug}}'
-  #   # filter: { field: 'project_type', value: 'photo' }
-  #   fields:
-  #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['story', 'photo'] }
-  #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-  #     - { label: 'Title', name: 'title', widget: 'string' }
-  #     - { label: 'Description', name: 'description', widget: 'string', required: false }
-  #     - { label: 'Content', name: 'body', widget: 'markdown', required: false }
-  #     - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
-  #     - {
-  #         label: 'Gallery',
-  #         name: 'gallery',
-  #         widget: 'list',
-  #         required: false,
-  #         summary: '{{fields.image}}',
-  #         field: { label: 'Image', name: 'image', widget: 'image' },
-  #       }

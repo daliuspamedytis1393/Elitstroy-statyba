@@ -1,6 +1,6 @@
 <template>
   <div class="main-testimonial-item">
-    <nuxt-img  :src="image" loading="lazy" format="webp" :placeholder="15" alt="Image" />
+    <nuxt-img :src="image" loading="lazy" format="webp" :placeholder="15" alt="Image" />
     <p>{{ text }}</p>
     <h3>{{ name }}</h3>
     <ul>

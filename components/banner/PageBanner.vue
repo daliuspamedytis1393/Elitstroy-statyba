@@ -4,7 +4,7 @@
       <div class="page-banner-content">
         <h2>{{ pageName }}</h2>
         <ul>
-          <template v-for="(item, index) in links" >
+          <template v-for="(item, index) in links">
             <li v-if="index + 1 === links.length" :key="index">
               {{ item.name }}
             </li>
@@ -70,7 +70,7 @@ export default {
     background-color: $black-color;
 
     &::before {
-      background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/image/main.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/image/main.jpg);
       position: absolute;
       top: 0;
       left: 0;

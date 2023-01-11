@@ -13,7 +13,6 @@
       </div>
     </div>
   </section>
-  
 </template>
 
 <script>
@@ -25,10 +24,10 @@ export default {
     },
   },
   methods: {
-    calculateDelay(index){
-      return 100 + (50 * (index + 1))
-    }
-  }
+    calculateDelay(index) {
+      return 100 + 50 * (index + 1)
+    },
+  },
 }
 </script>
 

@@ -2,7 +2,7 @@
   <section class="services-section ptb-100">
     <div class="container">
       <div class="main-section-title white-title" data-aos="fade-up" data-aos-delay="100">
-        <span class="up-title">{{ darbaiData.pageTitle}}</span>
+        <span class="up-title">{{ darbaiData.pageTitle }}</span>
         <h2 class="text-black">{{ darbaiData.title }}</h2>
       </div>
       <client-only>

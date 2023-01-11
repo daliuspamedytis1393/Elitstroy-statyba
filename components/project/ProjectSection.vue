@@ -32,7 +32,7 @@ export default {
   methods: {
     getDelay(index) {
       return (200 * index).toString()
-    }
-  }
+    },
+  },
 }
 </script>

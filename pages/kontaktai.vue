@@ -21,25 +21,19 @@
                   data-netlify-honeypot="bot-field"
                   data-netlify-recaptcha="true"
                 >
-                  <input type="hidden" name="form-name" value="contacts">
+                  <input type="hidden" name="form-name" value="contacts" />
 
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label for="name"></label>
-                        <input type="text" name="name" required class="form-control" placeholder="Vardas">
+                        <input type="text" name="name" required class="form-control" placeholder="Vardas" />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label for="email"></label>
-                        <input
-                          type="email"
-                          name="email"
-                          required
-                          class="form-control"
-                          placeholder="El. paštas"
-                        >
+                        <input type="email" name="email" required class="form-control" placeholder="El. paštas" />
                       </div>
                     </div>
                     <div class="col-lg-12">

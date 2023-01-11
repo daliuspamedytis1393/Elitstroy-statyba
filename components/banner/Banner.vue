@@ -70,7 +70,7 @@ export default {
     background-color: $black-color;
 
     &::before {
-      background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/image/main.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/image/main.jpg);
       position: absolute;
       top: 0;
       left: 0;
@@ -87,10 +87,10 @@ export default {
 }
 
 @keyframes opacity {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }

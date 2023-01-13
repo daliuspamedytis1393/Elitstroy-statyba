@@ -1,8 +1,36 @@
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  src: url(/fonts/BeVietnamPro.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-display: optional;
+  font-style: italic;
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  src: url(/fonts/BeVietnamPro-Italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Verdana';
+  font-weight: 400;
+  ascent-override: 102%;
+  descent-override: 20%;
+  size-adjust: 95.5%;
+  src: local('Verdana');
+}
+
 body {
   font-size: $font-size;
-  font-family: $body-font-family;
   color: $body-color;
+  font-family: 'Be Vietnam Pro', 'Verdana', sans-serif;
 }
+
 .d-table {
   width: 100%;
   height: 100%;

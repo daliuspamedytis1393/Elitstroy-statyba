@@ -28,14 +28,12 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/bootstrap.min.css',
-    '@/assets/css/animate.min.css',
     '@/assets/css/icofont.min.css',
     '@/assets/css/aos.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/bootstrap.js', mode: 'client' },
     { src: '~/plugins/vue-owl-carousel.js', mode: 'client' },
     '~plugins/vue-fragment',
     '~plugins/vue-side-menu',

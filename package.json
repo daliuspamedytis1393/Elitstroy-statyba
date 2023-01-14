@@ -24,7 +24,6 @@
     "nuxt-lazy-hydrate": "^0.1.0",
     "nuxt-lazy-hydration": "^0.0.1",
     "nuxt-lazy-load": "^1.2.9",
-    "nuxt-speedkit": "^2.1.2",
     "sharp": "^0.31.3",
     "v-owl-carousel": "^1.0.8",
     "vue": "^2.6.14",

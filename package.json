@@ -34,7 +34,8 @@
     "vue-server-renderer": "^2.6.14",
     "vue-sidebar-menu": "^4.8.1",
     "vue-template-compiler": "^2.6.14",
-    "webpack": "^4.46.0"
+    "webpack": "^4.46.0",
+    "webpack-bundle-analyzer": "^4.7.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",

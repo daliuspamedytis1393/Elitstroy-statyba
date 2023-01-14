@@ -116,6 +116,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.main-btn {
+  margin-top: 30px;
+}
 .captcha {
   margin: 30px 0;
 }

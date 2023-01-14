@@ -1,7 +1,7 @@
 <template>
   <section class="call-button-wrapper">
     <a class="call-button" aria-label="Skambinti į telefono numerį" :href="`tel:${websiteData.phone}`"
-      ><i class="fa fa-phone"></i>
+      ><i class="icofont-phone"></i>
     </a>
   </section>
 </template>
@@ -25,7 +25,7 @@ export default {
   background: $main-color;
   width: 3.5rem;
   height: 3.5rem;
-  padding: 1rem;
+  padding: 12px;
   border-radius: 100%;
   color: $white-color;
   display: flex;

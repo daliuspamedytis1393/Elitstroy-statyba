@@ -14,19 +14,14 @@ export const headerScroll = function () {
   }
 
   const validateHeader = () => {
-    // eslint-disable-next-line no-console
-
     const windowY = window.scrollY
     const windowH = 100
     if (windowY > windowH) {
-      // We passed the first section, set a toggable class
       header.classList.add('is-fixed')
 
-      // Determine is we ready to animate
       if (windowY > windowH + 50) {
         header.classList.add('can-animate')
         if (windowY < lastScroll) {
-          // Determine if we scrolling up
           header.classList.add('scroll-up')
         } else {
           header.classList.remove('scroll-up')

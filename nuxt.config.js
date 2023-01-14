@@ -34,6 +34,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/bootstrap.js', mode: 'client' },
     { src: '~/plugins/vue-owl-carousel.js', mode: 'client' },
     '~plugins/vue-fragment',
     '~plugins/vue-side-menu',

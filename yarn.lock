@@ -1369,6 +1369,11 @@
   dependencies:
     "execa" "^3.4.0"
 
+"@netlify/traffic-mesh-agent-darwin-x64@^0.27.10":
+  "integrity" "sha512-j2blCh3TKNV35VPF9Zf/LM3v6pH/gz/Y7uu/78RLbgNvCW0vGN7b1GgFnXQKwrvbL6tRGumJS2P5PWUfEsKOBA=="
+  "resolved" "https://registry.npmjs.org/@netlify/traffic-mesh-agent-darwin-x64/-/traffic-mesh-agent-darwin-x64-0.27.10.tgz"
+  "version" "0.27.10"
+
 "@netlify/traffic-mesh-agent@^0.27.0":
   "integrity" "sha512-HZXEdIXzg8CpysYRDVXkBpmjOj/C8Zb8Q/qkkt9x+npJ56HeX6sXAE4vK4SMCRLkkbQ2VyYTaDKg++GefeB2Gg=="
   "resolved" "https://registry.npmjs.org/@netlify/traffic-mesh-agent/-/traffic-mesh-agent-0.27.10.tgz"
@@ -6507,6 +6512,11 @@
     "is-date-object" "^1.0.1"
     "is-symbol" "^1.0.2"
 
+"esbuild-darwin-64@0.13.13":
+  "integrity" "sha512-wkaiGAsN/09X9kDlkxFfbbIgR78SNjMOfUhoel3CqKBDsi9uZhw7HBNHNxTzYUK8X8LAKFpbODgcRB3b/I8gHA=="
+  "resolved" "https://registry.npmjs.org/esbuild-darwin-64/-/esbuild-darwin-64-0.13.13.tgz"
+  "version" "0.13.13"
+
 "esbuild-darwin-arm64@0.13.13":
   "integrity" "sha512-b02/nNKGSV85Gw9pUCI5B48AYjk0vFggDeom0S6QMP/cEDtjSh1WVfoIFNAaLA0MHWfue8KBwoGVsN7rBshs4g=="
   "resolved" "https://registry.npmjs.org/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.13.13.tgz"
@@ -10748,16 +10758,16 @@
     "tslib" "^2.0.3"
 
 "node-abi@^3.3.0":
-  "integrity" "sha512-qWO5l3SCqbwQavymOmtTVuCWZE23++S+rxyoHjXqUmPyzRcaoI4lA2gO55/drddGnedAyjA7sk76SfQ5lfUMnw=="
-  "resolved" "https://registry.npmjs.org/node-abi/-/node-abi-3.30.0.tgz"
-  "version" "3.30.0"
+  "integrity" "sha512-eSKV6s+APenqVh8ubJyiu/YhZgxQpGP66ntzUb3lY1xB9ukSRaGnx0AIxI+IM+1+IVYC1oWobgG5L3Lt9ARykQ=="
+  "resolved" "https://registry.npmjs.org/node-abi/-/node-abi-3.31.0.tgz"
+  "version" "3.31.0"
   dependencies:
     "semver" "^7.3.5"
 
 "node-addon-api@^5.0.0":
-  "integrity" "sha512-CvkDw2OEnme7ybCykJpVcKH+uAOLV2qLqiyla128dN9TkEWfrYmxG6C2boDe5KcNQqZF3orkqzGgOMvZ/JNekA=="
-  "resolved" "https://registry.npmjs.org/node-addon-api/-/node-addon-api-5.0.0.tgz"
-  "version" "5.0.0"
+  "integrity" "sha512-eh0GgfEkpnoWDq+VY8OyvYhFEzBk6jIYbRKdIlyTiAXIVJ8PyBaKb0rp7oDtoddbdoHWhq8wwr+XZ81F1rpNdA=="
+  "resolved" "https://registry.npmjs.org/node-addon-api/-/node-addon-api-5.1.0.tgz"
+  "version" "5.1.0"
 
 "node-fetch-native@^0.1.4", "node-fetch-native@^0.1.8":
   "integrity" "sha512-ZNaury9r0NxaT2oL65GvdGDy+5PlSaHTovT6JV5tOW07k1TQmgC0olZETa4C9KZg0+6zBr99ctTYa3Utqj9P/Q=="
@@ -13794,6 +13804,20 @@
     "node-addon-api" "^5.0.0"
     "prebuild-install" "^7.1.1"
     "semver" "^7.3.7"
+    "simple-get" "^4.0.1"
+    "tar-fs" "^2.1.1"
+    "tunnel-agent" "^0.6.0"
+
+"sharp@^0.31.3":
+  "integrity" "sha512-XcR4+FCLBFKw1bdB+GEhnUNXNXvnt0tDo4WsBsraKymuo/IAuPuCBVAL2wIkUw2r/dwFW5Q5+g66Kwl2dgDFVg=="
+  "resolved" "https://registry.npmjs.org/sharp/-/sharp-0.31.3.tgz"
+  "version" "0.31.3"
+  dependencies:
+    "color" "^4.2.3"
+    "detect-libc" "^2.0.1"
+    "node-addon-api" "^5.0.0"
+    "prebuild-install" "^7.1.1"
+    "semver" "^7.3.8"
     "simple-get" "^4.0.1"
     "tar-fs" "^2.1.1"
     "tunnel-agent" "^0.6.0"

@@ -8,18 +8,7 @@
         <div class="row">
           <div class="col-lg-3 col-sm-6">
             <div class="main-footer-item" data-aos="fade-up" data-aos-delay="100">
-              <nuxt-link to="/" class="footer-logo">
-                <nuxt-img
-                  class="logo"
-                  loading="lazy"
-                  height="150"
-                  width="150"
-                  src="/image/logo.png"
-                  placeholder
-                  alt="Kompanijos logotipas"
-                />
-                <p class="footer-title">Elitstroy</p>
-              </nuxt-link>
+              <Logo />
             </div>
           </div>
 
@@ -75,8 +64,12 @@
 </template>
 
 <script>
+import Logo from '~/components/Logo.vue'
 export default {
   name: 'FooterSection',
+  components: {
+    Logo,
+  },
   computed: {
     websiteData() {
       return this.$store.state.pagrindinisData[0]

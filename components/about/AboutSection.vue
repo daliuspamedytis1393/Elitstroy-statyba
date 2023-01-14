@@ -8,7 +8,6 @@
               loading="lazy"
               src="/image/apie-mus/apie-mus.jpeg"
               format="webp"
-              placeholder
               height="450"
               width="450"
               alt="Image"

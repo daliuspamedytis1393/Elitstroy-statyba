@@ -3,18 +3,7 @@
     <aside id="menu_slide_bar" class="menu-slide-bar">
       <div class="close-mobile-menu">
         <div class="mobile-logo">
-          <nuxt-link to="/" class="mobile-logo">
-            <nuxt-img
-              loading="lazy"
-              height="150"
-              width="150"
-              class="logo"
-              src="/image/logo.png"
-              :placeholder="15"
-              alt="Kompanijos logotipas"
-            />
-            <h4 class="progress-title-holder">Elitstroy</h4>
-          </nuxt-link>
+          <Logo color-class="text-black" />
         </div>
 
         <div class="close-btn" @click="CloseMobileMenu">
@@ -36,8 +25,12 @@
 
 <script>
 import { CloseMobileMenu } from '~/mixins/headerFunctions'
+import Logo from '~/components/Logo.vue'
 
 export default {
+  components: {
+    Logo,
+  },
   name: 'MobileMenu',
   props: {
     menu: {

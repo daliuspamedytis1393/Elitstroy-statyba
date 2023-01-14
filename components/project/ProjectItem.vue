@@ -5,6 +5,8 @@
       :src="image"
       :placeholder="15"
       format="webp"
+      width="416px"
+      height="554px"
       class="projects-img"
       alt="Projektas ir jo informacija"
     />

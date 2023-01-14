@@ -102,7 +102,7 @@ export default {
 
   h1 {
     color: $white-color !important;
-    font-size: 92px;
+    font-size: 64px;
     margin-bottom: 10px;
   }
 

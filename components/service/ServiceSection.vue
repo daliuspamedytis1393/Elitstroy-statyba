@@ -1,5 +1,5 @@
 <template>
-  <section class="services-section ptb-100">
+  <section class="services-section pt-100">
     <div class="container">
       <div class="main-section-title white-title" data-aos="fade-up" data-aos-delay="100">
         <span class="up-title">{{ darbaiData.pageTitle }}</span>
@@ -13,6 +13,7 @@
           :loop="options.loop"
           :margin="options.margin"
           :autoplay="true"
+          :dots="options.dot"
           :autoplay-speed="options.smartSpeed"
           :autoplay-hover-pause="options.autoplayHoverPause"
           :center="true"
@@ -46,6 +47,7 @@ export default {
         smartSpeed: 500,
         autoplayHoverPause: true,
         center: true,
+        dot: false,
         responsive: {
           0: {
             items: 1,

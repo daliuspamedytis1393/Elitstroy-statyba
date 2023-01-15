@@ -9,6 +9,7 @@
   font-family: IcoFont;
   font-weight: 400;
   font-style: Regular;
+  src: url(../../assets/fonts/icofont.woff2) format('woff2'), url(../../assets/fonts/icofont.woff) format('woff');
 }
 [class*=' icofont-'],
 [class^='icofont-'] {

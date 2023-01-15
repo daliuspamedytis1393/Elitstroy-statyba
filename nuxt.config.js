@@ -1,3 +1,6 @@
+import { resolve } from 'path';
+import pkg from './package.json';
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   mode: 'universal',
@@ -15,6 +18,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      {
+        href: 'https://elitstroy.lt/',
+        rel: 'preconnect'
+      },
+      {
+        href: 'https://elitstroy.lt/',
+        rel: 'dns-prefetch'
+      },
       {
         rel: 'preload',
         href: '/fonts/BeVietnamPro.woff2',
@@ -70,8 +81,29 @@ export default {
     baseURL: '/',
   },
 
+  alias: {
+    [pkg.name]: resolve(__dirname, '../lib'),
+    vue$: 'vue/dist/vue.runtime.common.js'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/](node-libs-browser)[\\/]/,
+            name: 'vendor'
+          }
+        }
+      }
+    },
+
+    filenames: {
+      app: ({ isDev }) => isDev ? '[name].js' : '[name].[chunkhash].js',
+      chunk: ({ isDev }) => isDev ? '[name].js' : '[name].[chunkhash].js'
+    },
+  },
 
   // configuration for server to serve form subfolder
   router: {
